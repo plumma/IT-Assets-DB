@@ -801,6 +801,7 @@
     <Content Include="Views\Assets\PrintSignoff_display.cshtml" />
     <Content Include="Views\Shared\_Layout - Sign Off Print.cshtml" />
     <Content Include="Views\Assets\DeleteConfirmation.cshtml" />
+    <Content Include="Views\KnowledgeBase\ReadMe.cshtml" />
     <None Include="Web.Backload.Default.config" />
     <None Include="Web.Backload.xsd">
       <SubType>Designer</SubType>

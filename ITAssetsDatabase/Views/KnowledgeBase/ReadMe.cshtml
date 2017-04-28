@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "ReadMe";
+}
+
+<style>
+    .matt-test {
+        background-color: white;
+        box-shadow: 5px 5px 5px #888888;
+        margin: 20px;
+        padding: 40px;
+    }
+
+    ui-dialog-title {
+    }
+</style>
+<div class="matt-test">
+    <h1 style="text-align: center;"><span style="color: #993366;"><strong>Welcome to my IT Support Website</strong></span></h1>
+    <p><br /> My name is Matt Plumley and I am training to become a software developer C#, MVC, JQuery Etc.</p>
+    <p>This is my website I have built to show case what I have been working on so far.</p>
+    <p>The website has two applications, an Asset Database and a Knowledge base, both which I designed and built from scratch</p>
+    <p><span style="color: #ff0000;">** Pls note file uploads not currently working, I need to check this with AppHarbour, it works fine in the Dev environment **</span></p>
+    <h2>&nbsp;</h2>
+    <h2 style="text-align: center;"><span style="color: #993366;">ASSET DATABASE</span></h2>
+    <p>Please feel free to add some fictional assets of Plumm Studios Ltd.</p>
+    <ul style="list-style-type: square;">
+        <li>Create New</li>
+    </ul>
+    <p>Under here a new Asset can be added and a user assigned to it along with any asset/call management asset details.</p>
+    <p>For the 'Lookup Requester', 'Lookup End User' fields I used JQuery Autocomplete widget for a nice end user experience.</p>
+    <p>Using AJAX I linked the searches to a live read only LDAP database which can be found here.</p>
+    <p><a href="http://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/" target="_blank">http://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/</a></p>
+    <p>I have also written a Helper to link to Active Directory but as this website is public the LDAP solution was used here.</p>
+    <p>These are the LDAP test names you can use for the lookup:-</p>
+    <p>Carl Friedrich Gauss<br />Robert Boyle<br />Marie Curie<br />Albert Einstein<br />Euclid<br />Leonhard Euler<br />Galileo Galilei<br />Carl Friedrich Gauss<br />Isaac Newton<br />Alfred Nobel<br />Louis Pasteur<br />Bernhard Riemann<br />Nikola Tesla</p>
+    <p>You can type any part of the name and it will look up the user, please be patient as it's an external resource it might be a little slow to respond.</p>
+    <p>For the Location section you can type the location name or the building name:-</p>
+    <p>Croydon, Nollys House<br />Reading - Gates House<br />Bristol - Castlefield<br />Londom - The Shard</p>
+    <p>For the Location section you can type the location name or the building name:-</p>
+    <p>Croydon, Nollys House<br />Reading - Gates House<br />Bristol - Castlefield<br />London - The Shard</p>
+    <p>For the Device Model lookup, you can type Laptop or Desktop or specify the make and model</p>
+    <p>1 Laptop HP Envy<br />2 Desktop HP GX520<br />3 Laptop Dell XT1224<br />4 Desktop Lenovo i7</p>
+    <p><br />Under the hostname section you can click on Fetch, this will use the Type and Location of the asset to lookup the latest Hostname and then increment the number by one to produce a unique hostname for that specific location and device type.</p>
+    <p>Under the Build section you can use this data;-</p>
+    <p>PlumDom1-&gt;ProdBuild 3.5</p>
+    <p>PlumDom2-&gt;UAT Build 1.2</p>
+    <ul style="list-style-type: square;">
+        <li>Edit</li>
+    </ul>
+    <p>I have designed the asset database so that a device can be registered and then assigned to a user.</p>
+    <p>Once assigned a sign off sheet can be uploaded and viewed and also a template sign off sheet can be printed off.</p>
+    <p>The state of the device can also be changed, i.e. you can put it into Repair, Retirement, Re-Deploy (to another user) or Returned to Stock.</p>
+    <p>I have included and audit trail of these states which is useful for asset management.</p>
+    <p>Under the 'Re-Deploy' option it's possible to change the asset to a new owner and additionaly the hostname, build and location can be changed if so required.</p>
+    <h2>&nbsp;</h2>
+    <h2 style="text-align: center;"><span style="color: #993366;">KNOWLEDGE BASE</span></h2>
+    <ul style="list-style-type: square;">
+        <li>Search</li>
+    </ul>
+    <p>A straightforward lookup with search criteria to narrow down the DB lookup.</p>
+    <p>Again this uses Autocomplete to search the knowledge articles google style.</p>
+    <p>The design I extracted fom an Apple Knowledge search gui I really liked the look of. I didn't copy any code, I just used Chrome F12 functions to analyse how the buttons were created using CSS and also the search field results view can be changed using the CSS controlled DIV buttons.</p>
+    <ul style="list-style-type: square;">
+        <li>Add new article</li>
+    </ul>
+    <p>Here a new KB article can be added.</p>
+    <nav></nav>
+</div>

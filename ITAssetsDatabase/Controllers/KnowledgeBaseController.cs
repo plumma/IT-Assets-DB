@@ -452,7 +452,11 @@ namespace ITAssetsDatabase.Controllers
                return View(model);
             }
 
-              
+        public ActionResult ReadMe() {
+
+            return View();
+
+        } 
         
     
     
