@@ -9,8 +9,10 @@ namespace ITAssetsDatabase.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+               AutomaticMigrationsEnabled = true;
         }
+
+        
 
         protected override void Seed(ITAssetsDatabase.Models.ITAssetsDatabaseDBContext context)
         {

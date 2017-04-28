@@ -192,10 +192,6 @@
     <Compile Include="Helpers\pingtest.cs" />
     <Compile Include="Helpers\StringExtensions.cs" />
     <Compile Include="Helpers\HtmlHelpers.cs" />
-    <Compile Include="Migrations\201704101109407_April2017.cs" />
-    <Compile Include="Migrations\201704101109407_April2017.Designer.cs">
-      <DependentUpon>201704101109407_April2017.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Application.cs" />
@@ -812,11 +808,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201704101109407_April2017.resx">
-      <DependentUpon>201704101109407_April2017.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

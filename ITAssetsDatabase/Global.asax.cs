@@ -27,7 +27,7 @@ namespace ITAssetsDatabase
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            Database.SetInitializer<ITAssetsDatabaseDBContext>(new CreateDatabaseIfNotExists<ITAssetsDatabaseDBContext>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<ITAssetsDatabaseDBContext>());
             
         }
     }
