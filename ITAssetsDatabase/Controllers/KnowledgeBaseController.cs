@@ -338,11 +338,13 @@ namespace ITAssetsDatabase.Controllers
             thisArticle.ArticleTypeId = model.ArticleTypeId;
             thisArticle.ArticleCategoryId = model.ArticleCategoryId;
 
-            var staff = db.Staff.ToList();
+            //var staff = db.Staff.ToList();
 
-            var staff1 = staff.Where(s => s.LoggedInName == CurrentlyLoggedin).FirstOrDefault();
+            //var staff1 = staff.Where(s => s.LoggedInName == CurrentlyLoggedin).FirstOrDefault();
 
-            thisArticle.StaffId = staff1.Id;
+            //thisArticle.StaffId = staff1.Id;
+
+            thisArticle.StaffId = 1;
 
             db.Articles.Add(thisArticle);
             db.SaveChanges();

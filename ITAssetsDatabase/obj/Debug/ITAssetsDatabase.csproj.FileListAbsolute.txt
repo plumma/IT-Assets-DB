@@ -1074,3 +1074,4 @@ C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\S
 C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
 C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
