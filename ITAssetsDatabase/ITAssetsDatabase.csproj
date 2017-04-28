@@ -802,7 +802,6 @@
     <Content Include="Views\Assets\Action.cshtml" />
     <Content Include="Views\Assets\ReDeploy.cshtml" />
     <Content Include="Views\Assets\SignoffSheetUpload.cshtml" />
-    <Content Include="Views\Assets\PrintSignoff.cshtml" />
     <Content Include="Views\Assets\PrintSignoff_display.cshtml" />
     <Content Include="Views\Shared\_Layout - Sign Off Print.cshtml" />
     <Content Include="Views\Assets\DeleteConfirmation.cshtml" />
