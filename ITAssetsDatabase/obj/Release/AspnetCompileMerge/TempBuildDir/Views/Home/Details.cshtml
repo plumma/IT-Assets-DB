@@ -1,0 +1,185 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.Order>
+
+
+<td style="width:15px" ></td>
+<td colspan="8">
+
+<table style="background-color:white;border:thin;font-size:11px"" >
+
+        
+@foreach (var item in Model)
+{
+
+
+    foreach (var n in item.OrderItems)
+    {
+    <tr>  
+        <td style="width:10px"></td>
+        <td colspan="3" style="text-align:justify" >&nbsp Items for: @Html.DisplayFor(modelItem => n.EndUser.FirstName)&nbsp @Html.DisplayFor(modelItem => n.EndUser.SecondName)</td>        
+        <td></td>        
+        <td></td>        
+        <td colspan="2" style="text-align:right">Order Id: @Html.DisplayFor(modelItem => n.OrderId) &nbsp</td>
+        <td style="width:15px"></td>
+    </tr>
+            
+   <tr style="background-color:#B4B4B4;color:black;font-weight:bold">                            
+        <td style="width:5px;border:solid;border-width:1px;border-color:white;background-color:white"></td>
+        <td style="border:solid;border-width:1px;border-color:white">Item</td>
+        <td style="border:solid;border-width:1px;border-color:white">Type</td>
+        <td style="border:solid;border-width:1px;border-color:white">Make</td>
+        <td style="border:solid;border-width:1px;border-color:white">Model</td>
+        <td style="border:solid;border-width:1px;border-color:white">Barcode</td>
+        <td style="border:solid;border-width:1px;border-color:white">SerialNo</td>
+        <td style="border:solid;border-width:1px;border-color:white"></td>
+        <td style="width:inherit;background-color:white"></td>
+                            
+    </tr>   
+        
+        int count = 0;
+        foreach (var i in n.Items)
+        {
+            count++;
+                         <tr>             
+                            <td style="width:inherit"></td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@count</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray" >@Html.DisplayFor(modelItem => i.Product.ProductType.Type)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.DisplayFor(modelItem => i.Product.ProductMake.Make)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.DisplayFor(modelItem => i.Product.Model)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.DisplayFor(modelItem => i.Barcode)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.DisplayFor(modelItem => i.SerialNo)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray"></td>
+                            <td style="width:inherit"></td>
+
+                         </tr>                                                
+        }
+
+        if (count == 0)
+        {       
+                                     <tr style="border-bottom:medium" class="details_@item.Id">                            
+                                     <td colspan="9" style="font-style:italic">There are no items to display for this order, please add items</td>
+                                      </tr>   
+        }
+    }
+    
+    <tr>
+        <td style="width:inherit"></td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td style="width:inherit"></td>        
+    </tr>       
+    
+    
+    <tr style="background-color:#B4B4B4;color:black;font-weight:bold"> 
+        <td style="width:inherit;background-color:white"></td>
+        <td style="border:solid;border-width:1px;border-color:white" colspan="7">Notes</td>                
+        <td style="width:inherit;background-color:white"></td>  
+    </tr>
+    
+    <tr>
+        <td style="width:inherit"></td>
+        <td style="text-align:justify;border:solid;border-width:1px;border-color:lightgray", colspan="7">@Html.DisplayFor(modelItem => item.Notes)</td>
+        <td style="width:inherit"></td>  
+    </tr>
+           
+
+    <tr>
+        <td style="width:inherit"></td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td style="width:inherit"></td>        
+    </tr>
+       
+     <tr style="background-color:#B4B4B4;color:black;font-weight:bold"> 
+        <td style="width:inherit;background-color:white"></td>
+        <td colspan="2">Cost Centre</td>
+        <td colspan="1">Project Code</td>
+        <td colspan="2">Supplier Ref</td>        
+        <td colspan="2">Courier Ref</td>        
+        <td style="width:inherit;background-color:white"></td>      
+       
+    </tr>
+    
+   
+    
+    
+    <tr>  
+        <td style="width:inherit"></td>
+        <td style="border:solid;border-width:1px;border-color:lightgray" colspan="2">@Html.DisplayFor(modelItem => item.CostCentreOveride)</td>
+        <td style="border:solid;border-width:1px;border-color:lightgray" colspan="1">@Html.DisplayFor(modelItem => item.ProjectCodeOveride)</td>
+        <td style="border:solid;border-width:1px;border-color:lightgray" colspan="2">@Html.DisplayFor(modelItem => item.SupplierRef)</td>        
+        <td style="border:solid;border-width:1px;border-color:lightgray" colspan="2">@Html.DisplayFor(modelItem => item.CourierRef)</td>        
+        <td style="width:inherit"></td>      
+       
+    </tr>
+    
+    <tr>
+        <td style="width:inherit"></td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td style="width:inherit"></td>        
+    </tr>
+       
+    <tr style="background-color:#B4B4B4;color:black;font-weight:bold">   
+        <td style="width:inherit ;background-color:white"></td>
+        <td colspan="2">Status </td>
+        <td colspan="1">Date</td>
+        <td style="width:inherit;background-color:white"></td>
+        <td style="width:inherit;background-color:white"></td>
+        <td style="width:inherit;background-color:white"> </td>
+        <td style="width:inherit;background-color:white"></td>
+        <td style="width:inherit;background-color:white"></td> 
+    </tr>  
+        
+  
+    
+    foreach (var x in item.ProgressAudits)
+    {
+                    <tr style="font-size:11px">  
+                        <td style="width:inherit"></td>   
+                        <td style="text-align:left;border:solid;border-width:1px;border-color:lightgray", colspan="2">@Html.DisplayFor(modelItem => x.OrderStatus.Status)</td>
+                        <td style="text-align:center;border:solid;border-width:1px;border-color:lightgray", colspan="1">@Html.DisplayFor(modelItem => x.Date)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="width:inherit"></td>
+                    </tr>                            
+            
+    }
+
+}
+ 
+        <tr>
+        <td style="width:inherit"></td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td style="width:inherit"></td>        
+    </tr>
+    
+       
+     </table>
+
+    <table><tbody></tbody></table>
+
+    </td>
+

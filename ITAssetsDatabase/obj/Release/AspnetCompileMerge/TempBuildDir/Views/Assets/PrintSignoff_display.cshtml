@@ -1,0 +1,229 @@
+﻿@model ITAssetsDatabase.Models.Assets.PrintSignoff
+ 
+@{
+    Layout = null;
+}
+
+
+
+<style type="text/css">
+    
+
+  #A4_page {
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+
+ #container  {
+      /*padding:70px 50px 80px 50px;*/
+      margin:30px;
+      border: 3px solid white;
+      /*border-color:red;*/
+  }
+
+    #logo {
+
+        padding:20px;
+    }
+
+    #titles {
+
+        padding-left:20px;
+        background-color:darkgray;
+        color:white;
+        font-size:17px;
+        height:30px;
+        padding-top:5px;
+    }
+
+    #titles1 {
+
+        padding-left:20px;
+        background-color:darkgray;
+        color:white;
+        height:20px;
+        padding-top:5px;
+    }
+
+    #spacer {
+
+       border: 3px solid darkgrey;
+       height:20px;
+    }
+
+
+    #buildinfo {
+
+       border: 3px solid darkgrey;
+
+    }
+
+
+    @@media print {
+
+        .no-print {
+            display: none;
+        }
+
+        #A4_page {
+            display: block;
+        }
+    }
+
+</style>
+
+
+
+    <div id="A4_page">
+
+        <div id="container">
+
+            <div id="logo">
+                <p><img src="~/Images/Equinit_logo.png" /></p>
+                IT Asset Sign Off Sheet
+            </div>
+
+
+            <div id="titles">
+
+                @Html.DisplayFor(model => model.Domain) - Device User Sign off
+
+            </div>
+
+            <div id="spacer"></div>
+
+            <div id="titles1">
+                Section 1 - Device Build Information
+            </div>
+
+
+            <div id="buildinfo">
+
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.EndUser)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.EndUser)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Domain)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Domain)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Hostname)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Hostname)
+                </div>
+            </div>
+
+
+
+            <div id="titles1">
+                Section 2 - Engineer Sign off
+            </div>
+
+            <div id="buildinfo">
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Make)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Make)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Model)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Model)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Asset)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Asset)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.SerialNo)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.SerialNo)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.CallRef)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.CallRef)
+                </div>
+
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.Engineer)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.Engineer)
+                </div>
+
+            </div>
+
+
+            <div id="titles1">
+                Section 2 - Engineer Sign off
+            </div>
+        </div>
+</div>
+
+
+
+
+@*@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script language="javascript" type="text/javascript">
+
+
+        function windowClose() {
+            window.open('', '_parent', '');
+            window.close();
+        }
+
+        function printDiv(divID) {
+            //Get the HTML of div
+            var divElements = document.getElementById(divID).innerHTML;
+            //Get the HTML of whole page
+            var oldPage = document.body.innerHTML;
+
+            //Reset the page's HTML with div's HTML only
+            document.body.innerHTML =
+              "<html><head><title></title></head><body>" +
+              divElements + "</body>";
+
+            //Print Page
+            window.print();
+
+            //Restore orignal HTML
+            document.body.innerHTML = oldPage;
+
+
+        }
+
+
+    </script>
+}*@
+
+

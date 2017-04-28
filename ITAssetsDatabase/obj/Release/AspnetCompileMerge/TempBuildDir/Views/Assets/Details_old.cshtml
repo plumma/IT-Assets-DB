@@ -1,0 +1,118 @@
+﻿@model ITAssetsDatabase.Models.Asset
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Asset</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PRRef)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PRRef)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PORef)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PORef)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AssetNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AssetNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SerialNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SerialNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MAC_Address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MAC_Address)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EmployeeID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EmployeeID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HelpdeskRef)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HelpdeskRef)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HostnameId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HostnameId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HostnameXafinityId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HostnameXafinityId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BuildId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BuildId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DeviceId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeviceId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StaffId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StaffId)
+    </div>
+
+   @foreach (var item in Model.AssetAssigned)
+   {
+    
+    @item.AssetAssignee.HelpdeskRef;
+    @item.AssetAssignee.Requester.FullName;
+   @item.AssetStatus.State;
+   @item.AssetStatus.State;
+       
+    
+   }
+
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

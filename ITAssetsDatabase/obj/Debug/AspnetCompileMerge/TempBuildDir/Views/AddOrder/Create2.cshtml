@@ -1,0 +1,242 @@
+﻿@model ITAssetsDatabase.Models.Order
+
+@{
+    ViewBag.Title = "Create New - Step 2";
+}
+
+
+
+@using (Html.BeginForm("Create2", "AddOrder"))
+{  
+
+
+<table style="background-color:white" id="adduser_tbl">
+        
+        @*@Html.HiddenFor(model => model.StaffId)*@
+        
+   <tr style="background-color:red">
+            <td colspan="5" style="text-align:left;color:white;width:500px">Step 2</td>            
+   </tr>
+       
+    <tr>
+        <td style="text-align:left", colspan="5"></td>
+    </tr>
+    
+    <tr>
+        <td style="text-align:left", colspan="5"></td>
+    </tr>
+    
+    <tr>
+        <td style="text-align:left", colspan="5"> 
+        <input style="width:20px;background:white;border:none"  type="radio" name=myradio value="1" checked>&nbsp Add Users to request </td>
+        
+    </tr>   
+    
+    <tr>
+        <td style="text-align:left;width:5px"></td>
+        <td style="text-align:left", colspan="4">             
+        <input id="searchbox" style="width:150px;height:20px;text-align:left" type="text"/>&nbsp 
+        <button style="width:50px;height:25px;vertical-align:central" id="search_bt">Lookup</button>
+         </td>
+    </tr>
+
+          @* Table to Display Search Results   *@
+    
+     <tr> 
+        <td style="text-align:left;width:5px"></td>
+        <td style="text-align:left", colspan="4">             
+
+<table id="tbl_userlist">        
+    <tr id="header" hidden style="background-color:#B4B4B4;color:black;font-weight:bold">                                    
+        <td style="width:200px;border:solid;border-width:1px;border-color:white;text-align:left">Name</td>
+        <td style="width:300px;white-space:nowrap;border:solid;border-width:1px;border-color:white;text-align:left">Email Address</td>        
+        <td style="width:200px;border:solid;border-width:1px;border-color:white;text-align:left">Logon</td>              
+        <td style="width:50px;border:solid;border-width:1px;border-color:white;text-align:left"></td>
+        <td style="width:1px;border:solid;border-width:1px;border-color:white;text-align:left"></td>
+     </tr> 
+    
+    <tr id="userlist"> </tr>
+    
+    @* Discovered End Users Added here from SearchAD.cshtml *@
+
+</table>
+        
+        </td>
+    </tr> 
+    
+
+    <tr>
+        <td style="text-align:left", colspan="5"></td>
+    </tr>
+
+
+    @* Number of users Section   *@
+
+     <tr>
+        <td style="text-align:left;width:5px"></td>
+        <td style="text-align:left", colspan="4"><hr style="width:500px"></td>
+    </tr>  
+    
+     <tr>
+        <td style="text-align:left", colspan="5"> 
+        <input style="width:20px;background:white;border:none" type="radio" name=myradio value="2">&nbsp Number of users (names not currently known)</td>
+    </tr>    
+    
+        
+    <tr>
+        <td style="text-align:left;width:5px"></td>
+        <td style="text-align:left", colspan="4"> <input style="width:30px;height:10px;text-align:left" type="text" name="q" /></td>
+        
+    </tr>  
+
+    <tr>
+        <td colspan="5">
+        <input type="submit" value="Next" id="submit_bt" /> 
+        </td>
+    </tr>
+     
+    <tr>
+        <td colspan="5">
+        @Html.HiddenFor(m => m.Id)
+        @Html.HiddenFor(m => m.HDRef)
+        @Html.HiddenFor(m => m.RaisedById)
+        @Html.HiddenFor(m => m.RaisedBy.FirstName)
+        @Html.HiddenFor(m => m.RaisedBy.SecondName)
+        </td>
+    </tr>
+        
+       
+    </table>
+}
+
+
+<div id="dialog"></div>
+<table id="searchResults"></table>
+
+
+
+<!-- http://localhost:56244/Home/search?id=1161&q=dawe !-->
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryui")  
+    @Scripts.Render("~/bundles/watermark")  
+    @Styles.Render("~/Content/themes/base/css")
+
+<script>
+
+    var SIDarray = [];
+
+    $(document).ready(function ()
+    {        
+        
+        $("#search_bt").click(function (e)
+        {
+
+            var q = $.trim($('#searchbox').val());
+                       
+
+            if (q == "")
+            { alert("Please enter a surname"); }
+
+            else
+            {
+
+                $("#dialog").dialog({
+
+                    autoOpen: false,
+                    width: "auto",
+                    height: 300,
+                    resizable: false,
+                    modal: true,
+                    title: "Search Results",
+                    //  show: { effect: "blind", duration: 100 },
+                    // hide: { effect: "explode", duration: 200 },
+                    open: function (event, ui) {
+                        $(this).load("@Url.Action("SearchAD")" + '?q=' + q);
+                    }
+                });
+
+                $("#dialog").dialog("open");
+
+            }
+            e.preventDefault(); 
+                
+            });
+
+
+    
+
+        // Using .live as dynamically added elements aren't picked up as part of the DOM
+
+        $('#Remove').live('click', (function (e)
+        {
+                    
+            //Update SID Array to remove user
+
+            var SID = $(this).closest('tr').find('td').eq(4).text();
+
+            var flag = false;
+
+            for (var i = 0; i < SIDarray.length; i = i + 1) {
+
+               if (SID == SIDarray[i]) {
+                   SIDarray[i] = null;
+                }
+            };
+                        
+            // Remove from webpage
+
+            $(this).closest('tr').remove();
+
+         e.preventDefault();            
+                            }));
+    });
+
+
+
+  //   Hijack Submit button
+    $('#submit_bt').live('click', (function (e)
+    
+    {
+       
+        var array = new Array();
+
+        $("tr.allusers").each(function(i, tr) {
+           
+            var Email = $(this).find('Input').eq(0).val();
+            var DomainLogon = $(this).find('Input').eq(1).val();
+            var SID = $(this).find('Input').eq(2).val();
+            var FirstName = $(this).find('Input').eq(3).val();
+            var MiddleName = $(this).find('Input').eq(4).val();
+            var SecondName = $(this).find('Input').eq(5).val();
+
+            array.push({ Email: Email, DomainLogon: DomainLogon, SID: SID, FirstName: FirstName, MiddleName: MiddleName, SecondName: SecondName });         
+
+        })
+
+        var RequestData = {};
+        
+        RequestData.Id = $('#Id').val();
+        RequestData.HDRef = $('#HDRef').val();
+        RequestData.RaisedById = $('#RaisedById').val();    
+
+        RequestData.userarray = array;
+
+        $.ajax({
+            url: "@Url.Action("Create2", "AddOrder")",
+                   type: "POST",
+                   contentType: 'application/json;',
+                   dataType: 'json',
+                   data: JSON.stringify(RequestData)
+               }).done(function () {                   
+                   window.location = '@Url.Action("Create3B", "AddOrder")';
+             });
+
+
+         e.preventDefault();
+ 
+    }));
+
+
+</script>
+}

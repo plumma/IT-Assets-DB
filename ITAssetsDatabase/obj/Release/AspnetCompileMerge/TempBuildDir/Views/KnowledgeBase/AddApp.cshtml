@@ -1,0 +1,108 @@
+﻿@model ITAssetsDatabase.Models.Application
+
+
+<style>
+    #wrapper {
+        background-color: white;
+    }
+
+
+    .editor-field-popup input {
+        width: 300px;
+    }
+
+    
+    .editor-label-top {
+        padding-top: 30px;
+    }
+
+
+</style>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "addappform" })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+  
+
+    <fieldset>
+        <legend>Application</legend>
+
+
+        
+            <div class="editor-label-top">
+                Application Name
+                <div style="color:red" id="errormessage"></div>
+            </div>
+            <div class="editor-field-popup">
+                 @Html.EditorFor(model => model.AppName) 
+                @Html.ValidationMessageFor(model => model.AppName)
+            </div>
+
+        
+
+            <div class="editor-label">
+                Company
+            </div>
+        <div class="editor-field-popup">
+            @Html.EditorFor(model => model.Company)
+            @Html.ValidationMessageFor(model => model.Company)
+        </div>
+
+            <p>
+               <input type="button" value="Create" id="createApp" />
+            </p>
+        
+    
+</fieldset>
+}
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+
+
+<script>
+
+    $('#AppName').focus(function()
+    
+    {   
+        
+        $('#errormessage').empty();    
+                                    });
+
+
+    $('#createApp').click(function ()
+
+    {           
+        var validate = $('#AppName').val().trim();
+
+        if (validate == "")
+
+        { $('#errormessage').append("Please enter application name"); }
+
+        else
+
+        {
+        var form = $('#addappform').serialize();
+        $.ajax({
+            url: "@Url.Action("AddApp", "KnowledgeBase")",
+            data: form,
+            type: 'POST',
+            success: function (data) {
+
+                $('#ApplicationId').val(data.Id);
+                $('#SearchApp').val(data.AppName);
+                $('#SearchApp').css({ "background-color": "#F0F0F0" });
+                $('#TestApp').val(data.AppName)
+                $('#ArticleCategoryId').focus();             
+                $("#dialog").dialog("close");                
+            }
+        });
+      }
+
+  });    
+
+
+</script>
+
+

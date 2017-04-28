@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ITSupportSolutions" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Matt\\Documents\\DEV\ Work\\IT\ Assets\ DB\\ITAssetsDatabase\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Matt\\Documents\\DEV\ Work\\IT\ Assets\ DB\\ITAssetsDatabase\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ITAssetsDatabase-Web.config Connection String" description="ITAssetsDatabase Connection String used in web.config by the application to access the database." value="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\App_Data\ITAssetsDatabase.Models.ITAssetsDatabaseDBContext.mdf;Integrated Security=True;MultipleActiveResultSets=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Matt\\Documents\\DEV\ Work\\IT\ Assets\ DB\\ITAssetsDatabase\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ITAssetsDatabase']/@connectionString" />
+  </parameter>
+  <parameter name="ITAssetsDatabase.Models.ITAssetsDatabaseDBContext-Web.config Connection String" description="ITAssetsDatabase.Models.ITAssetsDatabaseDBContext Connection String used in web.config by the application to access the database." value="ITAssetsDatabase.Models.ITAssetsDatabaseDBContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Matt\\Documents\\DEV\ Work\\IT\ Assets\ DB\\ITAssetsDatabase\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ITAssetsDatabase.Models.ITAssetsDatabaseDBContext']/@connectionString" />
+  </parameter>
+</parameters>

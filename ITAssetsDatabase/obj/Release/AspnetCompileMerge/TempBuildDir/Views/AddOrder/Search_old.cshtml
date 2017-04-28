@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.EndUser>
+
+   <style>
+          td {  background-color:white}
+    </style>    
+    
+
+@if (Model != null)
+{
+    
+if (Model.Count() == 0)
+{
+    
+              <text> No results found...</text>
+     
+}
+else
+{  
+ <p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+        
+ <table>
+ 
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+        <td>@Html.DisplayFor(modelItem => item.MiddleName)</td>
+        <td>@Html.DisplayFor(modelItem => item.SecondName)</td>
+        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+        <td>@Html.ActionLink("Add", "Create3", 
+                    new {  OrderId=ViewBag.OrderId, EndUserId=item.Id, FirstName=item.FirstName, SecondName=item.SecondName, Email=item.Email, Helpdeskref=ViewBag.HDRef})</td>
+    </tr>
+}
+
+</table>
+    }
+}
+else
+
+{
+    
+   <table> 
+    
+       <tr>
+       <td> 
+             Please enter surname in search
+     </td>
+   </tr>
+           
+           </table>
+
+}

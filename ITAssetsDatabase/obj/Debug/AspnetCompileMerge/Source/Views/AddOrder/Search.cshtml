@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.EndUser>
+
+
+
+@if (Model != null)
+{
+    
+    if (Model.Count() == 0)
+        {
+    
+              <text> No results found...</text>
+     
+        }
+            else
+        {  
+            <p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+           
+            <table id="searchresults">
+ 
+
+@foreach (var item in Model) {
+    <tr id="@item.Id">
+        <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+        <td>@Html.DisplayFor(modelItem => item.MiddleName)</td>
+        <td>@Html.DisplayFor(modelItem => item.SecondName)</td>
+        <td>@Html.DisplayFor(modelItem => item.Email)</td>              
+        <td>            
+            <button type=submit>Add</button>
+            
+        </td>
+        <td>
+            <input type="hidden" name="enduserids" id="enduserids" value="@item.Id">
+        </td>
+     </tr>
+}
+
+</table>
+        }
+
+    }
+    else
+    {
+    
+        <table>    
+            <tr><td  colspan="5">Please enter surname in search</td></tr>           
+        </table>
+
+   }
+
+
+<script>                
+    $('#searchresults tbody tr td button').click(function (e) 
+    
+        {
+        var row = $(this).closest('tr').clone().wrap('<p>').parent().html();
+        // As there's no outerHTML in Jquery have to use clone to copy it then wrap it in a <p> then strip <p> away as HTML strips outer tags
+       // alert(row);
+        //   var row = $(this).closest('tr').html();  This worked byt sripped off the <tr> and I need <tr id>
+        row = row.toLowerCase(); //IE converts tags to uppper case
+        var row = row.replace("<button type=\"submit\">add</button>", "<button class=\"Remove\">Remove</button>"); //For Chrome
+        var row = row.replace("<button type=submit>add</button>", "<button class=\"Remove\">Remove</button>");  // For IE8
+      //  alert(row);
+        // $('#userlist').after('<tr>' + row + '</tr>');
+         $('#userlist').after(row);
+         $('#dialog').dialog("close");
+
+        });
+</script>
+
+    

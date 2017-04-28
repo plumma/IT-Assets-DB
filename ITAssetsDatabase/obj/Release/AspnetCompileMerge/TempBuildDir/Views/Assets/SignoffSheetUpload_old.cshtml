@@ -1,0 +1,46 @@
+﻿@model ITAssetsDatabase.Models.Assets.SignoffSheetUploadViewModel
+
+@{
+    ViewBag.Title = "SignoffSheetUpload";
+}
+
+<h2>SignoffSheetUpload</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>SignoffSheetUploadViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Uploadpath)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Uploadpath)
+            @Html.ValidationMessageFor(model => model.Uploadpath)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AssetId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AssetId)
+            @Html.ValidationMessageFor(model => model.AssetId)
+
+            @Html.DropDownList("Enduser", Model.Endusers)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

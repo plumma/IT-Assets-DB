@@ -1,0 +1,196 @@
+﻿@model ITAssetsDatabase.Models.Article
+@using ITAssetsDatabase.HtmlHelpers
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout - KB Article.cshtml";
+
+}
+
+<style>
+
+
+    #wrapper {
+          background-color:white; box-shadow: 5px 5px 5px #888888;padding:40px;width:75%/*;border:medium solid*/;    
+
+    }
+
+
+    #textBody {
+        margin:20px;/*border:medium solid;*/   
+    }
+
+    #Summary { margin-top:15px; margin-bottom:20px; clear:left;padding-top:25px}
+
+       #SummaryText {margin-top:10px;width:670px;word-wrap: break-word;}
+    
+    #Details {margin-top:15px;margin-bottom:20px}
+
+       #DetailsText { margin-top:10px;width:670px;word-wrap: break-word;}
+
+    #Resolution {margin-top:15px;margin-bottom:20px}
+
+      #ResolutionText { margin-top:10px;margin-bottom:30px;width:670px;word-wrap: break-word;}
+
+    li label {
+        font-size:12px;
+    }
+
+     .Attachments {
+
+    text-decoration:none;
+    display: inline-block; 
+    margin-bottom:60px  
+}
+
+   #line { width:100%; padding-top:0px; margin: 0px auto 0px auto }
+
+
+    .ThreeFieldsGrid {
+        /*border:solid;
+        color:red;*/
+        display: inline-table;
+        /*height: 18px;*/
+        width: 100%;
+        margin:0 0;
+        padding:0px;
+    
+    }
+
+    .ThreeFieldsGrid li {
+    
+    /*border:solid;
+    color:blue;*/
+    display: table-cell;
+    height: 18px;
+    width: 33%;
+    line-height: 18px;    
+    white-space: nowrap;
+    text-align:center;
+}
+         
+        #CloseBtn {
+        clear:both;         
+        padding-top:80px;
+        margin-left:310px;
+        /*float:right;*/
+        position:relative;       
+    
+    }
+
+    
+</style>
+
+
+<fieldset>
+    <legend>Article</legend>
+        
+    <div id="wrapper">
+
+        <div id="textBody">
+
+            <div style="clear: left; float: left; text-align: left;"><h2 style="display:inline">Article</h2></div>
+                
+           
+            <div style="clear: right; float: right; text-align: right;">ID: @Html.DisplayFor(model => model.id)</div>
+
+            @*<a href="mailto:someone@example.com?cc=someone_else@example.com&subject=This%20is%20the%20subject&body=This%20is%20the%20body">Send email</a>*@
+
+                <div id="Summary">
+                    <label for="SummaryText">@Html.DisplayNameFor(model => model.Summary)</label>
+                    <div id="SummaryText">@Html.DisplayFormattedData(Model.Summary)</div>
+                </div>
+
+                <div id="Details">
+                    <label for="DetailsText">@Html.DisplayNameFor(model => model.Details)</label>
+                    <div id="DetailsText">@Html.DisplayFormattedData(Model.Details)</div>
+                </div>
+                    
+                <div id="Resolution">
+                    <label for="ResolutionText">@Html.DisplayNameFor(model => model.Resolution)</label>
+                    <div id="ResolutionText">@Html.DisplayFormattedData(Model.Resolution)</div>
+                </div>
+            
+                <div class="Attachments">
+
+                    @foreach (var n in Model.UploadedFilesKB)
+                    {                    
+                        <a href="@Url.Action("GetFileFromDisk", new { id = n.id })"> @n.FileName <img src="~/Images/DocIcon.png" style="width:15px;height:15px" /> </a>
+                    }
+                </div>
+
+
+                <div id="line"><hr /></div>
+
+                        
+            
+                <ul class="ThreeFieldsGrid">
+                        <li id="left-li">
+                            <label for="Summary">Application Name</label>
+                            @Html.DisplayFor(model => model.Application.AppName)
+                        </li>
+
+                        <li id="mid-li">
+                            <label for="Category">@Html.DisplayNameFor(model => model.ArticleCategory.Category)</label>
+                            @Html.DisplayFor(model => model.ArticleCategory.Category)
+                        </li>
+
+                    <li id="right-li">
+                        <label for="Type">Type</label>
+                        @Html.DisplayFor(model => model.ArticleType.Name)
+
+                    </li>
+                    </ul>
+                
+
+            <div id="line"><hr /></div>
+
+
+               
+            <ul class="ThreeFieldsGrid">
+                <li id="left-li">
+                    <label for="Summary">Submitted By</label>
+                    @Html.DisplayFor(model => model.Staff.FullName)
+                </li>
+
+                <li id="mid-li">
+                    &nbsp
+                </li>
+
+                <li id="right-li">
+                    <label for="Type">Date Created</label>
+                    @Html.DisplayFor(model => model.CreatedDate)
+
+                </li>
+            </ul>
+               
+            <div id="line"><hr /></div>
+
+         
+
+
+
+                <div id="CloseBtn">
+                    @*<input type="button" value="Close" onclick="windowClose();">*@
+                    <a id="Close" href="#" onclick="windowClose()">Close</a>
+                </div>
+            </div>
+            </div>
+
+</fieldset>
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id })    
+</p>*@
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script language="javascript" type="text/javascript">
+        function windowClose() {
+            window.open('', '_parent', '');
+            window.close();
+        }
+</script>
+}
+
+

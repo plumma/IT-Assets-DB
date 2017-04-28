@@ -1,0 +1,130 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.AddOrder.Create3BViewModel>
+
+@{
+    ViewBag.Title = "Create3_B";
+}
+
+<h2>Create3_B</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+
+     <tr>
+        <th colspan="">
+            
+            @Html.DisplayNameFor(model => )
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Extension)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Domain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DomainLogon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessAreaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th></th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <th>
+           
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Extension)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Domain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DomainLogon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessAreaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MiddleName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Extension)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Domain)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DomainLogon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessAreaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

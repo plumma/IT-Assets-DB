@@ -1,0 +1,388 @@
+﻿@model ITAssetsDatabase.Models.Asset
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<style>
+    #wrapper {
+        background-color: white;
+        box-shadow: 5px 5px 5px #888888;
+        padding: 40px;
+        width: 75%;
+    }
+
+    input {
+        width: 400px;        
+        padding-left: 25px;
+        padding: 6px 10px 7px 30px;
+        
+        font-size: 14px;
+        background-color: #FFF7F7;     
+        
+    }
+
+        #item_AssetStatus_state {
+
+        font-weight:600;
+        color:plum;
+        }
+
+
+
+
+    /*input:focus, select:focus { 
+       
+        -webkit-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        -moz-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+
+        background-color: #f3eeee;
+	    
+    }*/
+    
+
+    select {
+
+        height:33px;
+        width:440px;
+        background-color: #FFF7F7;      
+        padding-left:27px;  
+    }
+      
+
+
+    #textBody {
+        margin: 20px; /*border:medium solid;*/
+    }
+
+
+    .Lookup {
+        background: transparent url('../Images/icon_search_trans.png') 8px 8px no-repeat;
+        background-color: #FFF7F7;       
+    }
+
+    .Status {
+        font-weight:600;
+        color:darkred;
+    }
+
+    #ResolutionText {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 670px;
+        word-wrap: break-word;
+    }
+
+
+
+    #CloseBtn {
+        clear: both;
+        padding-top: 80px;
+        margin-left: 310px;
+        /*float:right;*/
+        position: relative;
+    }
+
+    .editor-label {
+        clear: both;
+        margin-top: 10px;
+        float: left;
+        vertical-align: central;
+    }
+
+    .editor-field {
+        float: right;
+        vertical-align: central;
+               
+    }
+
+
+
+
+    h4 {
+        margin-bottom: 40px;
+    }
+
+    p {
+        clear: both;
+    }
+
+
+    textarea {
+        width: 642px;
+        height: 147px;
+    }
+
+
+ 
+
+    .inputStyleBox {
+
+        float:right;
+        width:400px;        
+        height:20px;        
+        font-size:14px; border:none; outline:none;        
+        border-radius: 5px;
+        box-shadow:inset rgba(0,0,0,0.75) 0 1px 2px;        
+        background: #fff;
+        color: #333;
+        margin: 5px 0 6px 0;
+        padding: 6px 10px 7px 30px;
+        font-size: 14px;
+        background-color: #FFF7F7;   
+        
+    }
+
+     .wrapper a {
+
+        position:absolute;top:12px;left:-32px
+    }
+
+
+
+</style>
+
+
+
+@using (Html.BeginForm("Edit_NEW","Assets"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+    @Html.HiddenFor(model => model.Id)
+
+            <fieldset>
+                <legend>EditAsset</legend>
+                <div id="wrapper">
+
+                    <div id="textBody">
+
+                        <h2 style="text-align:center">Edit Asset</h2>
+
+                        @*     Request Details   *@
+
+                        <h4>Request Details</h4>
+
+                        @Html.HiddenFor(x => x.Id)
+
+                        <div class="editor-label">
+                            Status
+                        </div>
+                        <div class="inputStyleBox" style="color:darkred;font-weight:bolder">
+
+                            @foreach (var item in Model.AssetAssigned)
+                    {
+                                @item.AssetStatus.State
+                    }
+
+                        </div>
+
+                        <div class="editor-label">
+                            Helpdesk Ticket Reference
+                        </div>
+
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" id="Edit_HDRef">Edit</a>*@
+                            @foreach (var item in Model.AssetAssigned)
+                    {
+                                @Html.TextBoxFor(x => item.AssetAssignee.HelpdeskRef)
+
+                    }
+                        </div>
+
+
+                        <div class="editor-label">
+                            Lookup Requester
+                        </div>
+
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_Requester">Edit</a>*@
+                            @foreach (var item in Model.AssetAssigned)
+                    {
+                                @Html.TextBoxFor(x => item.AssetAssignee.Requester.FullName)
+
+                    }
+                        </div>
+
+
+                        <div class="editor-label">
+                            Look up End User
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            <div style="display:inline;position:absolute;top:13px;right:20px"></div>
+                            @*<a href="#" style="text-align:right" id="Edit_Assignee">Edit</a>*@
+                            @foreach (var item in Model.AssetAssigned)
+                    {
+                                @Html.EditorFor(x => item.AssetAssignee.Assignee.FullName, new { @class = "Helpdesk" })
+                    }
+                        </div>
+
+                        @*     Asset Details    *@
+
+                        <h4 style="clear:both;padding-top:70px">Asset Details</h4>
+
+
+                        <div class="editor-label">
+                            Purchase Request Reference
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_PO">Edit</a>*@
+                            @Html.EditorFor(model => model.PRRef)
+                        </div>
+
+
+                        <div class="editor-label">
+                            Purchase Order Reference
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_PR">Edit</a>*@
+                            @Html.EditorFor(model => model.PORef)
+                        </div>
+
+
+                        <div class="editor-label">
+                            Device Asset Number
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_Asset">Edit</a>*@
+                            @Html.EditorFor(model => model.AssetNo)
+
+                        </div>
+
+                        <div class="editor-label">
+                            Device Serial Number
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_Serial">Edit</a>*@
+                            @Html.EditorFor(model => model.SerialNo)
+                        </div>
+
+                        <div class="editor-label">
+                            MAC Address
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_MAC">Edit</a>*@
+                            @Html.EditorFor(model => model.MAC_Address)
+                        </div>
+
+
+                        <div class="editor-label">
+                            Location
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_Assignee">Edit</a>*@
+                            @foreach (var item in Model.AssetAssigned)
+                    {
+                                @Html.EditorFor(x => item.Location.FullLocation, new { @class = "Helpdesk" })
+                    }
+
+                        </div>
+
+                        <div class="editor-label">
+                            Lookup device model
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_Device">Edit</a>*@
+
+                            @helper devicestring()
+                {
+                    var gg = @Model.Device.Type + "-" + @Model.Device.Make + "-" + @Model.Device.Model;
+                    <text>@gg</text>
+}
+
+                            <input class="text-box single-line valid" id="Device" name="Device" type="text"
+                                   value=@devicestring() readonly="readonly">
+
+                        </div>
+
+
+                        @*     Build information      *@
+
+                        <div style="font-size: 1.1em;font-weight:bold;color:black;padding-top:60px;padding-bottom:30px;clear:both;float:left">Build Information</div>
+
+                        <div id="fetcherror" style="padding-top:60px;color:red;float:right;padding-right:70px;display:none">Please correct Highlighted fields before Fetch</div>
+
+
+                        <div class="editor-label">
+                            Lookup Build
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="Edit_Build">Edit</a>*@
+                            @Html.EditorFor(model => model.Build.BuildName)
+                        </div>
+
+                        <div class="editor-label">
+                            Add Hostname
+                        </div>
+
+                        <div style="position:relative" class="editor-field">
+                            @*<a href="#" style="text-align:right" id="fetch">Fetch</a>*@
+                            @Html.EditorFor(m => m.Hostname.FullHostname)
+                            @Html.HiddenFor(model => model.HostnameId)
+                        </div>
+
+                        <div style="clear:both;padding-top:20px;padding-bottom:10px">
+                            Notes
+                        </div>
+                        <div>
+                            @*<a href="#" style="text-align:right" id="Edit_Assignee">Edit</a>*@
+                            @foreach (var item in Model.AssetAssigned)
+                        {
+                                @Html.DisplayFor(x => item.Notes)
+                        }
+                        </div>
+
+                        <p style="text-align:center">
+                            <input style="clear:both" type="submit" value="Assign" id="Assign" />
+                        </p>
+
+                        @Html.HiddenFor(model => model.StaffId)
+
+                        @foreach (var item in Model.AssetAssigned)
+                        {
+                        <input name= "AssetAssigneeId" type="hidden" value=@item.AssetAssignee.Id>                            
+                        }
+
+
+                    </div>
+                </div>
+
+</fieldset>
+
+}
+
+
+                
+
+
+
+            @section Scripts {
+
+                @Scripts.Render("~/bundles/jqueryval")
+                @Scripts.Render("~/bundles/jqueryui")
+                @Styles.Render("~/Content/themes/base/css")   @* Allows Background to go grey in Modal*@
+                <link href="~/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+                <script src="~/Scripts/Autosize/jquery.autosize.min.js"></script>
+                <script src="~/Scripts/Autosize/jquery.autosize.js"></script>
+                <script src="~/Scripts/plupload-2.1.2/js/plupload.full.min.js"></script>
+
+
+
+                <script>
+
+                    $(document).ready(function () {
+
+                        $('input').attr('readonly', 'readonly');
+
+                        $('#Assign').click(function () {
+
+                            $("#thisForm").submit();
+
+                        });
+
+
+                    })
+                </script>
+            }

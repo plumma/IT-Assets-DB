@@ -1,0 +1,1 @@
+H:\Dev\ITAssetsDatabase.Tests\obj\Debug\ITAssetsDatabase.Tests.csprojResolveAssemblyReference.cache

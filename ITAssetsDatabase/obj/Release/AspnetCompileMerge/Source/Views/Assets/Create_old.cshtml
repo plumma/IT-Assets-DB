@@ -1,0 +1,257 @@
+﻿@model ITAssetsDatabase.Models.Asset
+
+@*@{
+    ViewBag.Title = "Create";
+}*@
+
+
+<style>
+    #wrapper {
+        background-color: white;
+        box-shadow: 5px 5px 5px #888888;
+        padding: 40px;
+        width: 75% /*;border:medium solid*/;
+    }
+
+
+    #textBody {
+        margin: 20px; /*border:medium solid;*/
+    }
+
+    #Summary {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        clear: left;
+        padding-top: 25px;
+    }
+
+    #SummaryText {
+        margin-top: 10px;
+        width: 670px;
+        word-wrap: break-word;
+    }
+
+    #Details {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    #DetailsText {
+        margin-top: 10px;
+        width: 670px;
+        word-wrap: break-word;
+    }
+
+    #Resolution {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    #ResolutionText {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 670px;
+        word-wrap: break-word;
+    }
+
+    li label {
+        font-size: 12px;
+    }
+
+    .Attachments {
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 60px;
+    }
+
+    #line {
+        width: 100%;
+        padding-top: 0px;
+        margin: 0px auto 0px auto;
+    }
+
+
+    .ThreeFieldsGrid {
+        /*border:solid;
+        color:red;*/
+        display: inline-table;
+        /*height: 18px;*/
+        width: 100%;
+        margin: 0 0;
+        padding: 0px;
+    }
+
+        .ThreeFieldsGrid li {
+            /*border:solid;
+    color:blue;*/
+            display: table-cell;
+            height: 18px;
+            width: 33%;
+            line-height: 18px;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+    #CloseBtn {
+        clear: both;
+        padding-top: 80px;
+        margin-left: 310px;
+        /*float:right;*/
+        position: relative;
+    }
+</style>
+
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Asset</legend>
+
+        <div id="wrapper">
+
+            <div id="textBody">
+
+                <h3>Registration Details Asset</h3>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.HelpdeskRef)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.HelpdeskRef)
+                    @Html.ValidationMessageFor(model => model.HelpdeskRef)
+                </div>
+
+                @*End user Details*@ 
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.RequesterSID)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.AssigneeID)
+                    @Html.ValidationMessageFor(model => model.AssigneeID)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.AssignedFirstName)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.AssignedFirstName)
+                    @Html.ValidationMessageFor(model => model.AssignedFirstName)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.AssignedSurname)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.AssignedSurname)
+                    @Html.ValidationMessageFor(model => model.AssignedSurname)
+                </div>
+
+                @* Requester Details*@
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.AssigneeID)
+                    @Html.ValidationMessageFor(model => model.AssigneeID)
+                </div>
+
+                
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.PRRef)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.PRRef)
+                    @Html.ValidationMessageFor(model => model.PRRef)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.PORef)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.PORef)
+                    @Html.ValidationMessageFor(model => model.PORef)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.AssetNo)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.AssetNo)
+                    @Html.ValidationMessageFor(model => model.AssetNo)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.SerialNo)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.SerialNo)
+                    @Html.ValidationMessageFor(model => model.SerialNo)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.MAC_Address)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.MAC_Address)
+                    @Html.ValidationMessageFor(model => model.MAC_Address)
+                </div>
+
+     
+                
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.HostnameId)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.HostnameId)
+                    @Html.ValidationMessageFor(model => model.HostnameId)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.BuildId)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.BuildId)
+                    @Html.ValidationMessageFor(model => model.BuildId)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.DeviceId)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.DeviceId)
+                    @Html.ValidationMessageFor(model => model.DeviceId)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.StaffId)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.StaffId)
+                    @Html.ValidationMessageFor(model => model.StaffId)
+                </div>
+
+                <p>
+                    <input type="submit" value="Create" />
+                </p>
+
+            </div>
+        </div>
+    
+    
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

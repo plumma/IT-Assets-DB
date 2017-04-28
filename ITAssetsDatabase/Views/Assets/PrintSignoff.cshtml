@@ -1,0 +1,102 @@
+﻿@model ITAssetsDatabase.Models.Assets.SignoffSheetUploadViewModel
+
+
+@*<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
+
+
+<style>
+    select {
+        height: 33px;
+        width: 300px;
+        background-color: #FFF7F7;
+        padding-left: 27px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /*input {
+        width: 200px;
+
+
+
+    }*/
+
+    div {
+        margin-bottom: 15px;
+    }
+
+    input, .upload {
+        width: 200px;
+        height: 25px;
+    }
+
+
+   .ui-dialog .ui-dialog-titlebar {
+      color:white;
+      background-color:#6c254a;
+      
+}
+
+   .ui-corner-all {
+    border-radius: 5px;
+}
+
+</style>
+
+
+
+
+@using (Html.BeginForm("PrintSignoff_display", "Assets", FormMethod.Post, new { id = "thisForm", target = "_blank" }))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Print Sign off sheet</legend>
+
+        @Html.HiddenFor(model => model.AssetId)
+
+
+        <div id="right">
+            <div>
+                Which users sign off sheet do you want to print?
+            </div>
+            <div style="text-align:center">
+                @Html.DropDownList("Enduser", Model.Endusers)
+            </div>
+            
+        </div>
+
+
+ 
+        <p>
+            <input id="Print" type="Submit" value="Preview" />
+        </p>
+    </fieldset>
+}
+
+
+<script>
+
+
+            $("#upload").click(function (e) {
+
+
+                e.preventDefault();
+
+                var endusername = $('#Enduser option:selected').text();
+                $('#Name').val(endusername);
+
+                //alert($('#Name').val());
+                //alert($('#Enduser').val());
+
+                $("#thisForm").submit();
+         });
+
+</script>
+

@@ -1,0 +1,131 @@
+﻿@model ITAssetsDatabase.Models.KnowledgeBase.KBViewModel
+
+    
+@{
+    ViewBag.Title = "Knowledge";
+    
+      
+}
+
+<style>
+    /*  To line search Button with text field, set the Div Position to relative which means any elements using the position: absolute will line up
+        absolutely from the relation of the DIV and not the Parnet HTML Element
+    */
+
+    #SearchButton {
+    position: absolute;
+    top: 15px; 
+    right:0px;
+
+    }
+
+
+    
+
+</style>
+
+
+<h2>Knowledge Base</h2>
+ 
+  
+<div style="position: relative;margin-bottom:10px">
+
+    @Html.TextBox("SearchString", "", new { placeholder = "Search Knowledge" })<button id="SearchButton">Search</button>    
+
+</div>
+
+    
+<div style="text-align:left;padding-left:0px;margin-bottom:10px">@Html.DropDownList("ArticleTypeId", @Model.ArticleTypeId, "All")</div>          
+    
+<div style="text-align:right;padding:0px">@Html.ActionLink("Add new article", "AddArticle", null, new { target = "_blank" })</div>    
+    
+    
+
+<div id="searchresults"></div>
+
+
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    
+    <link href="~/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {  
+
+
+            $('#test').click(function () {
+                alert($('#ArticleTypeId').val())
+
+            });
+
+        $('#SearchString').autocomplete({
+                        
+                        source: function (request, response) {
+                        $.ajax({
+                            url: '/KnowledgeBase/Autocomplete',
+                            dataType: "json",
+                            data: {
+                                    term: request.term,
+                                    ArticleTypeId:$('#ArticleTypeId').val()
+                            },
+                            success: function (data) {
+                                response(data);
+                            }
+                        });
+                    },
+
+                    select: function(event, ui) {
+                        event.preventDefault();
+                        retrieveselectedID(ui.item.value);
+                        $('#SearchString').autocomplete("close");  
+
+                    },
+                    focus: function(event, ui) {
+                        event.preventDefault();                    
+                    }
+            });
+                        
+
+                function retrieveselectedID(id) {
+
+                    $.ajax({
+                        url: "/KnowledgeBase/retrieveselectedID?Id=" + id, type: "GET"
+                    }).done(function (mydata) { $("#searchresults").empty().append(mydata) });
+                };
+
+
+            $('#SearchButton').click(function() 
+                
+                {
+                        $("#searchresults").empty();
+
+                        var a = $('#SearchString').val().trim();
+                        var b = $('#ArticleTypeId').val();
+                         var selectedvalue = $('#ArticleTypeId option:selected').text();
+
+                if (a == "")
+                { alert("Please enter some search text") }
+
+                else
+                {
+                    if (selectedvalue == "All")
+                    { b = 0; }
+                    $.ajax({
+                        url: "/KnowledgeBase/SearchKB?SearchString=" + a + "&ArticleTypeId=" + b, type: "GET"
+                    }).done(function (mydata) { $("#searchresults").empty().append(mydata) });
+
+                }
+
+                
+            });
+
+          
+            
+        });
+    </script>
+}
+
+

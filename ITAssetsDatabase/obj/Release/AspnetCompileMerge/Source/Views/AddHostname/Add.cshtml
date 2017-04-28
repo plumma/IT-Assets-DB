@@ -1,0 +1,111 @@
+﻿@model ITAssetsDatabase.Models.AddHostname.AddHostnameViewModel
+
+@{
+    ViewBag.Title = "AddHostname";
+}
+
+<h2>AddHostname</h2>
+
+
+<table>
+
+    <tr>
+        <td colspan="2">&nbsp</td>
+    </tr>
+            <tr>
+                <td style="width:150px;text-align:left">Asset Location:-</td>
+                <td>@Html.DropDownList("Locations", @Model.Locations, String.Empty) </td>
+            </tr>
+            
+            <tr>
+                <td style="width:inherit;text-align:inherit">Please Choose type:-</td>
+                <td>@Html.DropDownList("Type", @Model.Type, String.Empty) </td>
+            </tr>
+
+            <tr>
+                <td style="width:inherit;text-align:inherit">Your details:-</td>
+                <td>@Html.DropDownList("Staff", @Model.Staff, String.Empty) </td>
+             </tr>
+
+
+    <tr>
+        <td colspan="2">&nbsp</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">&nbsp</td>
+    </tr>
+
+    
+              <tr>
+                @*<td style="width:inherit;text-align:inherit">Add hostname to AD?</td> 
+                <td style="width:inherit;text-align:left"><input type="checkbox" name="AddtoAD" value="True"></td>*@           
+             </tr>
+
+            <tr>
+                <td colspan="2"><button type="button" id="fetch">Fetch</button></td>                
+            </tr>
+                
+</table>
+
+
+<div id="divProcessing">
+    <p style="color:red"><blink>Processing request..</blink> </p>
+    <p><img src="~/Images/ajax-loader.gif" /></p>       
+
+</div>
+
+<div id="fetchresult"></div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        // Hide the "busy" Gif at load:
+        $("#divProcessing").hide();
+        
+
+        // Handle the form submit event, and make the Ajax request:
+        $("#fetch").click(function (event) {
+            event.preventDefault();
+
+            // Show the "busy" Gif:
+            $("#fetchresult").hide();
+            
+            $("#divProcessing").show();
+            
+            //var url = $(this).attr("action");
+
+            var Locations = $("#Locations").val();
+            var Type = $("#Type").val();
+            var Staff = $("#Staff").val();
+
+            //var formData = $(this).serialize();
+            $.ajax({
+                url: "/AddHostname/confirmhostname?Locations=" + Locations + "&Type=" + Type + "&Staff=" + Staff,
+                type: "POST"
+            }).done(function (data) {
+
+                // Hide the "busy" gif:
+                $("#divProcessing").hide();
+
+                $("#fetchresult").show();
+
+                // Do something useful with the data:
+                $("#fetchresult").empty().append(data);
+            });
+        });
+    });
+   
+   
+
+</script>
+
+
+
+
+}

@@ -1,0 +1,632 @@
+﻿@model ITAssetsDatabase.Models.Assets.RegisterAssetViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<style>
+    #wrapper {
+        background-color: white;
+        box-shadow: 5px 5px 5px #888888;
+        padding: 40px;
+        width: 75% /*;border:medium solid*/;
+        /*height: 1300px;*/
+    }
+
+    input {
+        width: 400px;        
+        padding-left: 25px;
+        padding: 6px 10px 7px 30px;
+        font-size: 14px;
+        background-color: #FFF7F7;     
+    }
+
+
+    input:focus, select:focus { 
+       
+        -webkit-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        -moz-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+
+        background-color: #f3eeee;
+	    
+    }
+    
+
+    select {
+
+        height:33px;
+        width:440px;
+        background-color: #FFF7F7;      
+        padding-left:27px;  
+    }
+      
+
+
+    #textBody {
+        margin: 20px; /*border:medium solid;*/
+    }
+
+
+    .Lookup {
+        background: transparent url('../Images/icon_search_trans.png') 8px 8px no-repeat;
+        background-color: #FFF7F7;       
+    }
+
+    .Helpdesk {
+        background: transparent url('../Images/F.png') 8px 8px no-repeat;
+    }
+
+    #ResolutionText {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 670px;
+        word-wrap: break-word;
+    }
+
+
+
+    #CloseBtn {
+        clear: both;
+        padding-top: 80px;
+        margin-left: 310px;
+        /*float:right;*/
+        position: relative;
+    }
+
+    .editor-label {
+        clear: both;
+        margin-top: 10px;
+        float: left;
+        vertical-align: central;
+    }
+
+    .editor-field {
+        float: right;
+        vertical-align: central;
+        
+    }
+
+
+
+
+    h4 {
+        margin-bottom: 40px;
+    }
+
+    p {
+        clear: both;
+    }
+
+
+    textarea {
+        width: 642px;
+        height: 147px;
+    }
+
+
+    #please-wait {
+     
+     display: none;
+     position: fixed;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+    }
+
+        #please-wait .modal {
+            z-index: 1999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            -moz-opacity: 0.5;
+            background-color: black;
+            margin-left: 0;
+        }
+
+        #please-wait .spinner {
+            z-index: 2000;
+            padding-top: 20px;
+            padding-left: 20px;
+            background: #ffffff url("../../Images/fetch.gif") no-repeat 15px center;
+            width: 400px;
+            height: 40px;
+            border: 2px solid #666;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: 35%;
+            display: block;
+            border-radius: 5px;        
+            
+        }
+
+
+
+</style>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+
+<fieldset>
+   <legend>RegisterAssetViewModel</legend>
+
+        <div id="wrapper">
+
+            <div id="textBody">
+
+                <h2 style="text-align:center">Register Asset</h2>
+
+                @*     Request Details   *@
+
+                <h4>Request Details</h4>
+
+
+                <div class="editor-label">
+                    Helpdesk Ticket Reference
+                </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">@Html.ValidationMessageFor(model => model.HelpdeskRef)</div>
+                    @Html.EditorFor(model => model.HelpdeskRef, new { @class = "Helpdesk" })
+                </div>
+
+
+                <div class="editor-label">
+                    Domain
+                </div>
+                <div style="padding-bottom:6px;" class="editor-field">
+                    @Html.DropDownListFor(model => model.DomainId, Model.Domain)
+                </div>
+
+
+
+                <div class="editor-label">
+                    Lookup Requester
+                </div>                
+                 <div style="position:relative" class="editor-field">
+                        <div style="display:inline;position:absolute;top:13px;right:20px">@Html.ValidationMessageFor(m => m.LookupRequester)</div>                        
+                        @Html.TextBoxFor( m => m.LookupRequester, new { placeholder = "Lookup Requester", @class = "Lookup" })
+                        @Html.HiddenFor(model => model.RequesterSID) 
+                        @Html.HiddenFor(model => model.RequesterFirstName)
+                        @Html.HiddenFor(model => model.RequesterMiddleName)
+                        @Html.HiddenFor(model => model.RequesterSurname)
+                        @Html.HiddenFor(model => model.RequesterEmail)
+                        @Html.HiddenFor(model => model.RequesterDomain)
+                        @Html.HiddenFor(model => model.RequesterDomainLogon)
+                 </div>
+                
+
+                <div class="editor-label">
+                    Look up End User
+                </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">@Html.ValidationMessageFor(m => m.LookupEndUser)</div>                        
+                    @Html.TextBoxFor(m => m.LookupEndUser, new { placeholder = "Lookup EndUser", @class = "Lookup" })
+                    @Html.HiddenFor(model => model.AssigneeSID)                    
+                    @Html.HiddenFor(model => model.AssigneeFirstName)
+                    @Html.HiddenFor(model => model.AssigneeMiddleName)
+                    @Html.HiddenFor(model => model.AssigneeSurname)
+                    @Html.HiddenFor(model => model.AssigneeEmail)
+                    @Html.HiddenFor(model => model.AssigneeDomain)
+                    @Html.HiddenFor(model => model.AssigneeDomainLogon)
+                </div>
+
+                @*     Asset Details    *@
+
+                <h4 style="clear:both;padding-top:70px">Asset Details</h4>
+
+
+                <div class="editor-label">
+                    Purchase Request Reference
+                </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">
+                        @Html.ValidationMessageFor(model => model.PRRef)
+                    </div>
+                    @Html.EditorFor(model => model.PRRef)
+
+                </div>
+
+
+                <div class="editor-label">
+                    Purchase Order Reference
+                </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">
+                        @Html.ValidationMessageFor(model => model.PORef)
+                    </div>
+                    @Html.EditorFor(model => model.PORef)
+                </div>
+
+
+                <div class="editor-label">
+                    Device Asset Number
+                </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">
+                        @Html.ValidationMessageFor(model => model.AssetNo)</div>
+                        @Html.EditorFor(model => model.AssetNo)
+                        
+                    </div>
+
+                    <div class="editor-label">
+                        Device Serial Number
+                    </div>
+                    <div style="position:relative" class="editor-field">
+                        <div style="display:inline;position:absolute;top:13px;right:20px">
+                            @Html.ValidationMessageFor(model => model.SerialNo)</div>
+                            @Html.EditorFor(model => model.SerialNo)
+                            
+                        </div>
+
+                        <div class="editor-label">
+                            MAC Address
+                        </div>
+                        <div style="position:relative" class="editor-field">
+                            <div style="display:inline;position:absolute;top:13px;right:20px">
+                                @Html.ValidationMessageFor(model => model.MAC_Address)</div>
+                                @Html.EditorFor(model => model.MAC_Address)                                
+                            </div>
+
+
+                            <div class="editor-label">
+                                Location
+                            </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">@Html.ValidationMessageFor(m => m.LookupLocation)</div>
+                    @Html.TextBoxFor(m => m.LookupLocation, new { placeholder = "Lookup Location", @class = "Lookup" })
+                    @Html.HiddenFor(model => model.LocationId)
+                    
+                </div>
+
+                            <div class="editor-label">
+                                Lookup device model
+                            </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">@Html.ValidationMessageFor(m => m.LookupDeviceModel)</div>
+                    @Html.TextBoxFor( m => m.LookupDeviceModel, new { placeholder = "Lookup Device Model", @class = "Lookup" })
+                    @Html.HiddenFor(model => model.DeviceId)                    
+                </div>
+
+
+                            @*     Build information      *@
+
+                            <div style="font-size: 1.1em;font-weight:bold;color:black;padding-top:60px;padding-bottom:30px;clear:both;float:left">Build Information</div>
+                
+                            <div id="fetcherror" style="padding-top:60px;color:red;float:right;padding-right:70px;display:none">Please correct Highlighted fields before Fetch</div>
+                
+                            
+                            <div class="editor-label">
+                                Lookup Build
+                            </div>
+                <div style="position:relative" class="editor-field">
+                    <div style="display:inline;position:absolute;top:13px;right:20px">@Html.ValidationMessageFor(m => m.LookupBuild)</div>
+                    @Html.TextBoxFor(m => m.LookupBuild, new { placeholder = "Lookup Build", @class = "Lookup" })
+                    @Html.HiddenFor(model => model.BuildId)
+                    @Html.HiddenFor(model => model.BuildDomain)                    
+                </div> 
+
+                            <div class="editor-label">
+                                Add Hostname
+                            </div>
+
+                <div style="position:relative" class="editor-field">
+                    <a href="#" style="text-align:right" id="fetch">Fetch</a>
+
+                       <div style="display:inline;position:absolute;top:13px;right:20px">@Html.ValidationMessageFor(m => m.Hostname)</div>
+                            @Html.TextBoxFor(m => m.Hostname, new { @readonly = true})                                                
+                            @Html.HiddenFor(model => model.HostnameId)
+                    </div>
+
+                    <div style="clear:both;padding-top:20px;padding-bottom:10px">
+                        Notes
+                    </div>
+                    <div>
+                        @Html.TextAreaFor(model => model.Notes)
+                        @Html.ValidationMessageFor(model => model.Notes)
+                    </div>
+
+                    <p style="text-align:center">
+                        <input style="clear:both" type="submit" value="Register" id="register" />
+                    </p>
+
+                    @Html.HiddenFor(model => model.StaffId)
+
+                </div>
+                    </div>
+
+    </fieldset>
+
+}
+
+<div>
+    @Html.ActionLink("Cancel", "Index")
+</div>
+
+
+<div id="please-wait">
+    <div class="modal">
+        <div class="spinner">Doing Ping and AD check Pls Wait </div>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/themes/base/css")   @* Allows Background to go grey in Modal*@
+    <link href="~/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <script src="~/Scripts/Autosize/jquery.autosize.min.js"></script>
+    <script src="~/Scripts/Autosize/jquery.autosize.js"></script>
+    <script src="~/Scripts/plupload-2.1.2/js/plupload.full.min.js"></script>
+    
+    
+
+    <script>
+
+        $(document).ready(function () {
+            
+                    
+            // LookupRequester
+        
+            $('#LookupRequester').autocomplete({
+                
+                source: function (request, response) {
+                    var filter = $("#DomainId").val();
+                    $.getJSON("/Assets/LookupPersonAutocomplete", { term: request.term, DomainId: filter }, response);
+                },
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupRequester").val(ui.item.label);  // Displays Label in box after selection
+                    $("#RequesterSID").val(ui.item.value);
+
+                    $("#RequesterFirstName").val(ui.item.FirstName);
+                    $("#RequesterMiddleName").val(ui.item.MiddleName);
+                    $("#RequesterSurname").val(ui.item.Surname);
+                    $("#RequesterEmail").val(ui.item.Email);
+                    $("#RequesterDomain").val(ui.item.Domain);
+                    $("#RequesterDomainLogon").val(ui.item.Logon);
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+
+            $('#LookupEndUser').autocomplete({
+
+                source: function (request, response) {
+                    var filter = $("#DomainId").val();
+                    $.getJSON("/Assets/LookupPersonAutocomplete", { term: request.term, DomainId: filter }, response);
+                },
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupEndUser").val(ui.item.label);  // Displays Label in box after selection
+                    $("#AssigneeSID").val(ui.item.value);
+                    
+                    $("#AssigneeFirstName").val(ui.item.FirstName);
+                    $("#AssigneeMiddleName").val(ui.item.MiddleName);
+                    $("#AssigneeSurname").val(ui.item.Surname);
+                    $("#AssigneeEmail").val(ui.item.Email);
+                    $("#AssigneeDomain").val(ui.item.Domain);
+                    $("#AssigneeDomainLogon").val(ui.item.Logon);
+
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+            //  LookupLocation
+
+            $('#LookupLocation').autocomplete({
+                source: '/Assets/LookupLocationAutocomplete',
+                //delay: 500,
+                //minLength: 2,
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupLocation").val(ui.item.label);  // Displays Label in box after selection
+                    $("#LocationId").val(ui.item.value);
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+            //  Lookup Device Model
+
+            $('#LookupDeviceModel').autocomplete({
+                source: '/Assets/LookupDeviceModelAutocomplete',
+                //delay: 500,
+                //minLength: 2,
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupDeviceModel").val(ui.item.label);  // Displays Label in box after selection
+                    $("#DeviceId").val(ui.item.value);
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+            //  Lookup Build
+
+
+            $('#LookupBuild').autocomplete({
+
+                source: function (request, response) {
+                    var filter = $("#DeviceId").val();
+                    $.getJSON("/Assets/LookupBuildAutocomplete", { term: request.term, filter: filter }, response);
+                },
+
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupBuild").val(ui.item.label);  // Displays Label in box after selection
+                    $("#BuildId").val(ui.item.value);
+                    $("#BuildDomain").val(ui.item.build_domain);
+                }, 
+                focus: function (event, ui) {
+                    event.preventDefault();                  
+                }
+
+            });
+
+
+
+            //Start of Fetch  //
+
+            $('#fetch').click(function () {
+
+
+                // Check Location, Device, Build fields are filled in
+                
+                var isValid = true;
+
+                $('#LookupLocation,#LookupDeviceModel,#LookupBuild,#LocationId,#DeviceId,#BuildId').each(function () {
+
+                    if ($.trim($(this).val()) == "" || $(this).val() == 0 ) {
+
+                        $(this).css({
+                            "border": "1px solid red",
+                            "background": "#FFCECE"
+                        });
+
+                        $("#fetcherror").css("display", "block");
+                        isValid = false;
+                    }
+
+                    else
+
+                    {
+                        $(this).css({
+                            "border": "",
+                            "background": ""
+                        });                       
+                        
+                    }
+
+                    if (isValid == true) $("#fetcherror").css("display", "none");
+                    
+                });
+
+
+           
+
+                if (isValid == true)
+                {
+                    $('#please-wait').css('display', 'block');
+
+                    var LocationId = $('#LocationId').val();
+                    var DeviceId = $('#DeviceId').val();
+                    var StaffId = $('#StaffId').val();
+                    var BuildId = $('#BuildId').val();
+                
+                    //alert("LocationId: " + LocationId);
+                    //alert("DeviceId: " + DeviceId);
+                    //alert("StaffId: " + StaffIdd);
+                    //alert("BuildId: " + BuildId);
+
+
+                    $.ajax({
+                        url: "/Assets/FetchHostname",
+                        data: { LocationId: LocationId, DeviceId: DeviceId, StaffId: StaffId, BuildId: BuildId },
+                        type: "GET"
+                    }).done(function (mydata) {
+
+                        $('#please-wait').css('display', 'none');                                            
+                        $('#HostnameId').val(mydata.Id);
+                        $('#Hostname').val(mydata.FullHostname);
+                        $('#Hostname').focus();
+
+                    });
+
+                }
+
+       
+            });   
+                   
+
+
+            // End of Fetch  //
+            
+
+           
+            // MAC Address Autocharacters
+
+                $("#MAC_Address").live("keyup", function (event) {
+                    var limitField = $(this).val().trim().length;
+                    var limit = "17"
+                    if (event.keyCode != 8) {
+                        if (limitField == 2) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        } else if (limitField == 5) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        } else if (limitField == 8) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        } else if (limitField == 11) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        }
+                        else if (limitField == 14) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        }
+                    }
+                    if (limitField > limit) {
+                        $("#MAC_Address").val($(this).val().trim().substring(0, limit));
+                    }
+                });
+
+
+
+            // Register Asser
+
+                $('#register').click(function () {
+
+                        $("#thisForm").submit();
+
+                    });
+
+
+        
+
+        })
+    </script>
+ 
+}

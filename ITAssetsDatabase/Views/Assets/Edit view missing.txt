@@ -1,0 +1,487 @@
+
+
+<!DOCTYPE html>  
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>Create - Equiniti IT Assets Database</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="/Content/site.css" rel="stylesheet"/>
+
+        <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <img src="/Images/Equinit_logo.jpg" />
+                    <p class="site-title"><a href="/">IT Assets Database</a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">                       
+                        <span class="username"> Good morning UK1\plumlem</span>
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="/Assets">Home</a></li>
+                            <li><a href="/Home/Team">Team</a></li>
+                            <li><a href="/Upload/Upload">Upload</a></li>
+                            <li><a href="/AddHostname/Add">Fetch</a></li>
+                            <li><a href="/KnowledgeBase">Knowledge</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+          </header>
+        <div id="body">
+            
+            <section class="content-wrapper main-content clear-fix">
+                
+
+
+<style>
+    #wrapper {
+        background-color: white;
+        box-shadow: 5px 5px 5px #888888;
+        padding: 40px;
+        width: 75% 
+    }
+
+    input {
+        width: 400px;        
+        padding-left: 25px;
+        padding: 6px 10px 7px 30px;
+        font-size: 14px;
+        background-color: #FFF7F7;     
+    }
+
+
+    input:focus, select:focus { 
+       
+        -webkit-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        -moz-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+
+        background-color: #f3eeee;
+	    
+    }
+    
+
+    select {
+
+        height:33px;
+        width:440px;
+        background-color: #FFF7F7;      
+        padding-left:27px;  
+    }
+      
+
+
+    #textBody {
+        margin: 20px; /*border:medium solid;*/
+    }
+
+
+    .Lookup {
+        background: transparent url('../Images/icon_search_trans.png') 8px 8px no-repeat;
+        background-color: #FFF7F7;       
+    }
+
+    .Helpdesk {
+        background: transparent url('../Images/F.png') 8px 8px no-repeat;
+    }
+
+    #ResolutionText {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 670px;
+        word-wrap: break-word;
+    }
+
+
+
+    #CloseBtn {
+        clear: both;
+        padding-top: 80px;
+        margin-left: 310px;
+        /*float:right;*/
+        position: relative;
+    }
+
+    .editor-label {
+       clear: both;       
+        float: left;       
+       /*border:medium solid;*/
+        width: 30%;
+        padding-bottom:10px;
+        margin-bottom:10px;
+        
+    }
+
+    .editor-field {
+        float: right;       
+        border:thin solid;
+        width: 65%;
+        padding-bottom:10px;
+        padding-left:10px;
+        border-radius:3px;
+        margin-bottom:10px;
+        /*color: darkred;  */
+        font-weight:600;
+        background-color:#faf1f1;
+    }
+
+
+    h4 {
+        margin-bottom: 25px;
+        clear:both;
+        margin-top: 30px;
+    }
+
+    p {
+        clear: both;
+    }
+
+
+    textarea {
+        width: 642px;
+        height: 147px;
+    }
+
+    .notes {
+         
+        border:thin solid;        
+        border-radius:5px;
+        margin-bottom:10px;     
+        padding-top:0px;     
+        height:50px;   
+        text-align:left;
+        padding:5px;
+
+    }
+
+    select {
+    
+        width:200px;
+    }
+
+     #myheader { 
+                float:left;
+                margin-bottom: 40px;
+                clear: both;
+                margin-top: 30px;
+                font-size: 1.1em;
+                font-weight:bold;
+                color:black;
+    }
+
+    #status {
+
+        float:right;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        font-size:x-large;
+        color:darkred;
+    }
+
+
+</style>
+
+
+
+<form action="/Assets/Action" method="post"><input name="__RequestVerificationToken" type="hidden" value="sHG0YzQQRDb__n8HEy0VL3di6ztNd5kUkljlrhb3YoGnLQtrKRaeMc-wR7tY9RmznQDzHy45fIC-KsMJfUXuzWqoy1prrgsCYIcPnzRy62I-NLlKxz-8dlefI9dbrbyr0" />    <input name="Id" type="hidden" value=17 id="assetid">
+<fieldset>
+   <legend>RegisterAssetViewModel</legend>
+
+    <div id="wrapper">
+
+        <div id="textBody">
+
+            <div id="myheader">Device Details</div>
+
+            <div id="status">ASSIGNED</div>
+
+
+            
+
+        
+
+            <div class="editor-label">Purchase Request Reference</div>
+            <div class="editor-field">asdf</div>
+
+            <div class="editor-label">Purchase Order Reference</div>
+            <div class="editor-field">asdf</div>
+
+            <div class="editor-label">Device Asset Number</div>
+            <div class="editor-field">sadf</div>
+
+            <div class="editor-label">Device Serial Number</div>
+            <div class="editor-field">asdf</div>
+
+            <div class="editor-label">MAC Address</div>
+            <div class="editor-field">12:12:12:12:12:</div>
+
+            <div class="editor-label">Build</div>
+            <div class="editor-field">Ver 203 x64</div>
+
+            <div class="editor-label">Domain</div>
+            <div class="editor-field">UK1</div>
+
+            <div class="editor-label">Hostname</div>
+            <div class="editor-field">GRLPRDM0403IT001118L</div>
+
+            <div class="editor-label">Device Type</div>
+
+            <div class="editor-field">
+                Laptop ->
+                Toshiba ->
+                z30
+            </div>
+
+
+            <div class="editor-label">Registered By</div>
+            <div class="editor-field">Plumley, Matthew</div>
+
+
+            <h4 style="padding-top:30px">Assignment Trail</h4>
+
+            <table>
+                <tr style="background-color:#F00303;color:white;font-weight:bold">
+
+                    <td style="text-align:center;border:solid;border-width:1px;border-color:white">Date</td>
+                    <td style="border:solid;border-width:1px;border-color:white">Ref</td>
+                    <td style="width:150px;border:solid;border-width:1px;border-color:white">End User</td>
+                    <td style="width:150px;border:solid;border-width:1px;border-color:white">Requester</td>
+                    <td style="border:solid;border-width:1px;border-color:white">Tech</td>
+                    <td style="width:70px;border:solid;border-width:1px;border-color:white;width:80px">Status</td>
+
+                </tr>
+
+                    <tr>
+                        
+                        <td>       
+                            04/08/15
+                        </td>
+                        <td>
+                            fsdf 
+                        </td>
+                        <td>
+                            Thomas, Leanne
+                        </td>
+                        <td>
+                            Lean, Rob
+                        </td>
+
+                        <td>
+                            Plumley
+                        </td>
+                        
+                        <td>
+                            NEW            
+                        </td>
+
+                      </tr>
+                    <tr>
+                        
+                        <td>       
+                            10/08/15
+                        </td>
+                        <td>
+                            fsdf 
+                        </td>
+                        <td>
+                            Thomas, Leanne
+                        </td>
+                        <td>
+                            Lean, Rob
+                        </td>
+
+                        <td>
+                            Plumley
+                        </td>
+                        
+                        <td>
+                            ASSIGNED            
+                        </td>
+
+                      </tr>
+                            <tr>
+                                <td>
+                                    11/08/15
+                                </td>
+                                <td>
+                                    N/a
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+
+                                <td>
+                                    Plumley
+                                </td>
+                                 <td>
+                                    IN STOCK
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    11/08/15
+                                </td>
+                                <td>
+                                    N/a
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+
+                                <td>
+                                    Plumley
+                                </td>
+                                 <td>
+                                    RETIRED
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    11/08/15
+                                </td>
+                                <td>
+                                    N/a
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+
+                                <td>
+                                    Plumley
+                                </td>
+                                 <td>
+                                    IN STOCK
+                                </td>
+                            </tr>
+                    <tr>
+                        
+                        <td>       
+                            07/09/15
+                        </td>
+                        <td>
+                            SR1234 
+                        </td>
+                        <td>
+                            Zajdlic, Carly
+                        </td>
+                        <td>
+                            Plater, Richard
+                        </td>
+
+                        <td>
+                            Plumley
+                        </td>
+                        
+                        <td>
+                            ASSIGNED            
+                        </td>
+
+                      </tr>
+
+                 </table>
+
+            <h4 style="padding-top:30px;margin-bottom: 15px;">Asset Actions</h4>
+            
+            <div> <select id="Action" name="Action"><option value=""></option>
+<option value="1">RETURN TO STOCK</option>
+<option value="2">RE-DEPLOY</option>
+<option value="3">RETIRE DEVICE</option>
+<option value="4">DEVICE IN REPAIR</option>
+</select> <input type="submit" value="Action" id="action"></div>
+          
+            
+            
+                <p style="text-align:center">
+                    <a href="/assets">Cancel</a>
+                </p>
+
+
+
+            </div>
+
+
+        </div>
+    </fieldset>
+</form>
+<div id="redeploy"></div>
+
+
+
+
+
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; 2015 - IT Assets Database</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/Scripts/jquery-1.8.2.js"></script>
+
+        
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="/Scripts/jquery.validate.js"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="/Scripts/jquery-ui-1.8.24.js"></script>
+
+    <link href="/Content/themes/base/jquery.ui.core.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.resizable.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.selectable.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.accordion.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.button.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.dialog.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.slider.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.tabs.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.datepicker.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.progressbar.css" rel="stylesheet"/>
+<link href="/Content/themes/base/jquery.ui.theme.css" rel="stylesheet"/>
+   
+    <link href="/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <script src="/Scripts/Autosize/jquery.autosize.min.js"></script>
+    <script src="/Scripts/Autosize/jquery.autosize.js"></script>
+    <script src="/Scripts/plupload-2.1.2/js/plupload.full.min.js"></script>
+    
+    
+
+    <script>
+
+        $(document).ready(function () {
+
+            // Register Asser
+
+            $('#action').click(function () {
+
+                $("#thisForm").submit();
+
+            });
+
+        });
+    </script>
+ 
+
+    </body>
+</html>

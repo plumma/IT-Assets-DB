@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.Home.OrdersViewModel>
+ 
+@{
+    ViewBag.Title = "IT Assets - me";
+}
+
+<p>@Html.ActionLink("Create New", "Create1", "AddOrder")</p>
+
+
+@helper AlternateBackground(string color)
+{
+    if (ViewBag.count == null) { ViewBag.count = 0; }
+    <text>style="background-color:@(ViewBag.count % 2 == 1 ? color : "#FFFFFF")"</text>
+    ViewBag.count++;
+}
+
+
+<table>
+        <tr style="background-color:#F00303;color:white;font-weight:bold">
+
+            
+            <td colspan="2" style="text-align:center;width:60px;border:solid;border-width:1px;border-color:white">Created</td>
+            <td style="width:110px;border:solid;border-width:1px;border-color:white">Helpdesk Ref&nbsp</td>
+            <td style="width:70px;border:solid;border-width:1px;border-color:white">PR Ref&nbsp</td>
+            <td style="border:solid;border-width:1px;border-color:white">PO Ref&nbsp</td>
+            <td style="width:100px;border:solid;border-width:1px;border-color:white">Raised By&nbsp</td>
+            <td style="border:solid;border-width:1px;border-color:white">Tech</td>
+            <td style="width:160px;border:solid;border-width:1px;border-color:white"></td>
+        </tr>
+
+@foreach (var item in Model)
+{
+   
+    <tr @AlternateBackground("#F1F1F1")>
+
+        <td colspan="2" style="text-align:left;width:60px">@Html.DisplayFor(modelItem => item.DateCreated)</td>
+        <td style="text-align:left">@Html.DisplayFor(modelItem => item.HDRef)</td>
+        <td>@Html.DisplayFor(modelItem => item.PRRef)</td>
+        <td>@Html.DisplayFor(modelItem => item.PORef)</td>
+        <td style="width:140px">@Html.DisplayFor(modelItem => item.RaisedByFirstName)&nbsp
+            @Html.DisplayFor(modelItem => item.RaisedBySecondName)</td>
+        <td>@Html.DisplayFor(modelItem => item.StaffSecondName)</td>
+        
+        <td style="width:160px"><a class="details" href="#" id="@item.Id">Details</a>| @Html.ActionLink("Edit", "Edit", new { id = item.Id })| @Html.ActionLink("Delete", "Delete", new { id = item.Id })</td>        
+      </tr>   
+     
+    <tr id="details_@item.Id"></tr>     
+}    
+
+</table>
+    
+
+
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+
+
+            $('.details').click(function () {
+                var id = this.id;
+                if ($(this).text() == "Details") {
+
+                    $.ajax({
+                        url: "/Home/Details?id=" + id,
+                        success: function (mydata) { $("#details_" + id).empty().append(mydata); },
+                        type: "GET"                    
+                    })
+
+                    $("#row_" + id).removeAttr('Hidden');
+                    $(this).text("Hide");
+                }
+                else {
+
+                    $(this).text("Details");
+                    $("#details_" + id).empty();
+                                                          
+
+                }
+
+            });
+
+            return false;
+
+        });
+
+    </script>
+}
+
+

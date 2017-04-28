@@ -1,0 +1,76 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.Upload>
+
+@{
+    ViewBag.Title = "Upload";
+}
+
+<h2>Upload</h2>
+
+<p>
+    @Html.ActionLink("Add Application", "UploadAdd")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Version)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstallLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StaffId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Packaged)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th>
+            FileName
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Version)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstallLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Staff.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Packaged)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UploadedFiles)
+
+                    </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Download", "GetFileFromDisk", new { id=item.Id }) |
+           
+        </td>
+    </tr>
+}
+
+</table>

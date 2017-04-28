@@ -1,0 +1,228 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.Order>
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h3>Edit</h3>
+
+@using (Html.BeginForm("Edit", "Home"))
+{     
+    
+
+<table style="background-color:white;border:thin;font-size:11px;font-weight:400;color:black" >
+   
+
+<tr style="background-color:#F00303;color:white;font-weight:bold">
+            <td style="width:10px"></td>
+            <td colspan="2">ORDER DETAILS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2">ORDER ID: </td>            
+            <td style="width:10px"></td>
+</tr>
+
+<tr><td colspan="9"></td></tr>
+    
+           
+@foreach (var order in Model)
+{
+     
+    
+<tr>        
+        <td style="width:inherit">@Html.HiddenFor(ModelItem => order.Id) </td>
+        <td style="text-align:right">HD Ref</td>
+        <td style="text-align:left">@Html.EditorFor(modelItem => order.HDRef)</td>
+        <td colspan="2" style="text-align:right">PR Ref</td>
+        <td style="text-align:left">@Html.EditorFor(modelItem => order.PRRef)</td>
+
+        <td style="text-align:right">PO Ref</td>
+        <td style="text-align:left">@Html.EditorFor(modelItem => order.PORef)</td>    
+        <td style="width:inherit"></td>       
+        
+</tr>   
+     
+<tr><td colspan="9"></td></tr>
+
+<tr>     
+        <td style="width:inherit"></td>
+        <td style="text-align:right">Cost Centre</td>
+        <td style="text-align:left">@Html.EditorFor(modelItem => order.CostCentreOveride)</td>
+        <td colspan="2" style="text-align:right">Proj Code</td>
+        <td style="text-align:left">@Html.EditorFor(modelItem => order.ProjectCodeOveride)</td>
+        <td></td>        
+        <td></td>        
+        <td style="width:inherit"></td>      
+</tr>
+    
+<tr><td colspan="9"></td></tr>
+<tr><td colspan="9"></td></tr>
+<tr><td colspan="9"></td></tr>            
+      
+
+<tr>     
+        <td style="width:inherit"></td>
+        <td style="text-align:right">Raised By</td>
+        <td style="text-align:left">@Html.DropDownList("RaisedById")</td> 
+        <td></td>
+        
+        <td style="text-align:right">Assigned To</td>
+        <td style="text-align:left">@Html.DropDownList("StaffId")</td>
+        <td></td>        
+        <td></td>
+        <td style="width:inherit"></td>
+                
+</tr>   
+
+<tr><td colspan="9"></td></tr>
+<tr><td colspan="9"></td></tr>
+<tr><td colspan="9"></td></tr>
+<tr><td colspan="9"></td></tr>
+  
+<tr style="background-color:#F00303;color:white;font-weight:bold">
+
+            <td style="text-align:center;width:inherit"></td>
+            <td colspan="2">ORDER ITEMS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:inherit"></td>
+ </tr>
+ 
+<tr><td colspan="9"></td></tr>
+   
+ /* ------------------------------INNER TABLE with 7 x <td> -----------------------------------------------------------------------------------*/ 
+ 
+<tr>
+            <td style="width:10px"></td>
+            <td colspan="7">  
+
+               <table style="background-color:white;border:thin;font-size:11px;font-weight:400;color:black" >
+           
+            
+
+    @foreach (var EndUsers in order.OrderItems)
+    {
+    <tr>  
+        <td colspan="4" style="text-align:justify" >&nbsp Items for: @Html.DisplayFor(modelItem => EndUsers.EndUser.FirstName)&nbsp @Html.DisplayFor(modelItem => EndUsers.EndUser.SecondName)</td>        
+        <td></td>        
+        <td colspan="2" style="text-align:right">Order Id: @Html.DisplayFor(modelItem => EndUsers.OrderId) &nbsp</td>
+     </tr>
+            
+    <tr style="background-color:#B4B4B4;color:black;font-weight:bold">                            
+        <td style="width:10px;border:solid;border-width:1px;border-color:white">Item</td>
+        <td style="border:solid;border-width:1px;border-color:white">Type</td>
+        <td style="border:solid;border-width:1px;border-color:white">Make</td>
+        <td style="border:solid;border-width:1px;border-color:white">Model</td>
+        <td style="border:solid;border-width:1px;border-color:white">Barcode</td>
+        <td style="border:solid;border-width:1px;border-color:white">SerialNo</td>
+        <td style="border:solid;border-width:1px;border-color:white">Blank</td>
+    </tr>   
+        
+        int count = 0;
+        foreach (var items in EndUsers.Items)
+        {
+            count++;
+                         <tr>             
+                            <td style="width:inherit;border:solid;border-width:1px;border-color:lightgray">@count <input id="itemId" name="itemId" type="hidden" value="@items.Id"></td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.DisplayFor(modelItem => items.Product.ProductType.Type)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.DisplayFor(modelItem => items.Product.ProductMake.Make)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.DisplayFor(modelItem => items.Product.Model)</td>                            
+                            
+                             
+                           @* <td style="border:solid;border-width:1px;border-color:lightgray;text-align:center">@Html.EditorFor(modelItem => items.Barcode)</td>
+                             <td style="border:solid;border-width:1px;border-color:lightgray">@Html.EditorFor(modelItem => items.SerialNo)</td>
+                            <td style="border:solid;border-width:1px;border-color:lightgray">@Html.EditorFor(modelItem => items.Quantity)</td>*@
+
+        <td style="border:solid;border-width:1px;border-color:lightgray;text-align:center"><input class="text-box single-line" id="items_Barcode" name="Barcode" type="text" value="@items.Barcode"></td>
+        <td style="border:solid;border-width:1px;border-color:lightgray"><input class="text-box single-line" id="items_SerialNo" name="SerialNo" type="text" value="@items.SerialNo"></td>
+        <td style="border:solid;border-width:1px;border-color:lightgray"><input class="e-line" id="items_Quantity" name="" type="text" value=""></td>               
+                             
+                        </tr>   
+                        
+                                                                  
+        }
+
+        if (count == 0)
+        {       
+                                     <tr style="width:inherit;border-bottom:medium" class="details_@order.Id">                            
+                                     <td colspan="6" style="font-style:italic">There are no items to display for this order, please add items</td>
+                                      </tr>   
+        }
+        
+         <tr><td colspan="7"></td></tr>
+         <tr><td colspan="7"></td></tr>  
+    }
+    
+   
+                    
+                    
+                    
+                     </table>
+            </td>
+
+    <td style="width:10px"></td>
+</tr>
+
+    
+/* -----------------------------------------------------------------------------------------------------------------*/   
+    
+<tr><td colspan="9"></td></tr>
+<tr><td colspan="9"></td></tr>
+    
+<tr style="background-color:#F00303;color:white;font-weight:bold">
+            <td style="text-align:center;width:inherit"></td>
+            <td colspan="2">NOTES</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:inherit"></td>
+</tr>
+
+    
+<tr>
+        <td style="width:inherit"></td>               
+@*        <td style="text-align:center" colspan="7"><textarea style="width:70%;height:70px;display:block">@Html.TextAreaFor(modelItem => item.Notes)</textarea></td>*@
+          <td style="text-align:center" colspan="7">@Html.TextAreaFor(modelItem => order.Notes , new {style="width:70%;height:70px;display:block" })</td>
+
+        <td style="width:inherit"></td>
+</tr>
+    
+<tr style="background-color:#F00303;color:white;font-weight:bold">
+            <td style="text-align:center;width:inherit"></td>
+            <td colspan="2"> SAVE/RESET</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:inherit"></td>
+</tr>    
+    
+   
+<tr>
+        <td style="width:inherit"></td>
+        <td><input type="submit" value="Save" /></td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td></td>
+        <td style="width:inherit"></td>        
+</tr>
+       
+
+    
+
+    
+}
+    
+</table>
+    
+}

@@ -1,0 +1,51 @@
+﻿@model ITAssetsDatabase.Models.Order
+
+@{
+    ViewBag.Title = "New Request:";
+}
+
+<h3>Please choose the end user for this request</h3>
+<br />
+
+@using (Html.BeginForm("Search", "Home"))
+{     
+    <h3>Search Users:</h3>
+                                       
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.HDRef)
+
+    <input type="text" name="q" />
+    <input type="submit" value="Search" /> 
+}
+
+<table id="searchResults">
+</table>
+
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+            $("form").submit(function (e) {
+                var postData = $(this).serializeArray();
+                var formURL = $(this).attr("action");
+
+                $.ajax({
+                    url: formURL,
+                    type: "GET",
+                    data: postData
+                })
+                .success(function (data, textStatus, jqXHR) {
+                    $("#searchResults").html(data);
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    console.error("Oh dear!");
+                });
+
+                e.preventDefault(); //STOP default action
+            });
+        });
+    </script>
+}

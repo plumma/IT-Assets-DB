@@ -1,0 +1,291 @@
+﻿@model ITAssetsDatabase.Models.Hostname
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Hostname</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Location)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Location)
+            @Html.ValidationMessageFor(model => model.Location)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StaffId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StaffId)
+            @Html.ValidationMessageFor(model => model.StaffId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EndUserId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EndUserId)
+            @Html.ValidationMessageFor(model => model.EndUserId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProductTypeId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ProductTypeId)
+            @Html.ValidationMessageFor(model => model.ProductTypeId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Notes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Notes)
+            @Html.ValidationMessageFor(model => model.Notes)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+               
+        $(document).ready(function () {
+
+            $.ajax({
+                url: "/Fetch/DropDownlistTable",
+                type: "GET"
+            })
+               .done(function (data) {
+
+                   allproducts = data;  // omitting the var makes this a Global variable accessisble to other functions
+
+                   var options = [];
+                   options.push('<option value="">   <- Pick Type -></option>');
+                   var sort = [];
+                   var datum = data[0];
+                   sort[0] = datum.Type;
+                   options.push('<option value="' + datum.Type + '">' + datum.Type + '</option>');
+
+                   for (var n = 1; n < data.length; n++) {
+                       var current = data[n];
+                       var previous = data[n - 1];
+
+                       if (current.Type != previous.Type) {
+                           var endofsortarray = sort.length;
+                           var exists = "false";
+
+                           for (var s = 0; s < sort.length; s++) {
+                               if (current.Type == sort[s]) {
+                                   exists = "true";
+                                   break;
+                               }
+                           }
+
+                           if (exists == "false") {
+                               sort[endofsortarray] = current.Type;
+                               options.push('<option value="' + current.Type + '">' + current.Type + '</option>');
+                           }
+                       }
+                   }
+                    $('#type').html(options.join(''));
+                   $('#type').prop("disabled", false);
+
+               });
+
+            // Make Filter
+
+            $(function () {  
+                $("#type").change(function ()
+                {                    
+                    $('#model').empty();
+                    var modeloptions = [];
+                    modeloptions.push('<option value="">--  Model --</option>');
+                    $('#model').html(modeloptions.join(''));
+                    $('#model').prop("disabled", true);
+                   
+                    var typechoice = $(this).val();
+                    var sort = [];
+                    var options = [];
+                    options.push('<option value="">   <- Pick Make -></option>');
+
+                    for (var m = 0; m < allproducts.length; m++)
+                    {                        
+                        var choice = allproducts[m].Type;                        
+                        var exists = "false";
+
+                        if (typechoice == allproducts[m].Type)
+                        {
+                            if (sort.length == 0) 
+                            {
+                                sort[0] = allproducts[m].Make;
+                                options.push('<option value="' + sort[0] + '">' + sort[0] + '</option>');
+                            }
+                            else 
+                            {
+                                for (var s = sort.length-1 ; s > -1 ; s--)
+                                { 
+                                    if (allproducts[m].Make == sort[s])
+                                    {  exists = "true";
+                                        break;   }
+                                }                       
+                     
+                                var endofsortarray = sort.length;
+                                if( exists == "false")
+                                {
+                                    sort[endofsortarray] = allproducts[m].Make;
+                                    options.push('<option value="' + allproducts[m].Make + '">' + allproducts[m].Make + '</option>');
+                                }
+                            }
+                        }                         
+                    }                          
+    
+
+                    $('#make').html(options.join(''));
+                    $('#make').prop("disabled", false);
+
+                });
+            });   
+        });
+            
+        
+        // Models Filter
+
+        $(function () {  
+            $("#make").change(function ()
+            {                    
+                var typechoice = $("#type").val();
+                var makechoice = $(this).val();
+                var sort = [];
+                var options = [];
+                options.push('<option value="">   <- Pick Model -></option>');
+
+                for (var m = 0; m < allproducts.length; m++)
+                {                        
+                    var choice = allproducts[m].Type;                        
+                    var exists= "false";                        
+                       
+                    if (typechoice == allproducts[m].Type && makechoice == allproducts[m].Make)
+                    {
+                        
+                        options.push('<option id="' + allproducts[m].Id + '">' + allproducts[m].Model + '</option>');
+                        
+                   }                         
+                }                          
+                $('#model').html(options.join(''));
+                $('#model').prop("disabled", false);
+
+            });
+        });   
+        
+        //   Add action
+
+        $(function () {
+            $("#add").click(function () {
+
+                // Assign item drop downs to variables
+                var type = $('#type').val();
+                var make = $('#make').val();
+                var model = $('#model').val();
+                var modelid = $('#model').children(":selected").attr("id");
+             
+                // Assign count of EndUsers/Tables
+                var count = ($('#count').val()) - 1;
+
+                for (var n = 1; n <= count; n++) {
+                    
+                    var item = "#item-" + n;                    
+                    var checked = $(item).prop('checked');
+
+                    if (checked == true)
+
+                    {   //var table = document.getElementById(tableid);
+
+
+                        var enduserid_var = $('#enduserid-' + n).val();
+                        var orderitemid_var = $('#orderitemid-' + n).val();
+                        var tableid = '#tableuser-' + n;                        
+                        var tablerows = $(tableid).find("tr").length;
+                         
+                        if (tablerows == 0)
+                        {
+                            // If no records added then add first                                                   
+                            var newitem = '<tr><td>' + type  + '</td>' +
+                                              '<td>' + make  + '</td>' +
+                                              '<td>' + model + '</td>' +
+                                              '<td><input style="border:none;background-color:transparent;width:10px" type="text" value="1" readonly="readonly" id="quantity" name="QuantityList"/></td>' +
+                                              '<td><input type="hidden" id="itemId" name="ModelItemList" value=' + modelid + '>' + '</td>' +
+                                              '<td><input type="hidden" id="enduserid" name="EndUserList" value=' + enduserid_var + '>' + '</td>' +
+                                              '<td><input type="hidden" id="orderitemid" name="itemorderId" value=' + orderitemid_var + '></tr>';
+
+                            $(tableid).append(newitem);                       
+                                                                                   
+                        }
+                        else    // If there are records, need to check if Model already exists then iterate through rows and ammend quantity accordingly or add new item
+                        {                                                        
+                                                     
+                            var flag = false;
+
+                            $(tableid + ' tr').each(function () {
+                                
+                                var itemid_current = $('#itemId', this).val();
+                                var quant = $('#quantity', this).val();
+
+                                if (itemid_current == modelid) {
+                                    var newquant = parseInt(quant) + 1;
+                                    $('#quantity', this).val(newquant);
+                                    flag = true;
+                                }
+                                
+                            });
+
+                            if (flag == false) {
+                                var newitem = '<tr><td>' + type + '</td>' +
+                                                  '<td>' + make + '</td>' +
+                                                  '<td>' + model + '</td>' +
+                                                  '<td><input style="border:none;background-color:transparent;width:10px" type="text" value="1" readonly="readonly" id="quantity" name="QuantityList"/></td>' +
+                                                  '<td><input type="hidden" id="itemId" name="ModelItemList" value=' + modelid + '>' + '</td>' +
+                                                  '<td><input type="hidden" id="enduserid" name="EndUserList" value=' + enduserid_var + '>' + '</td>' +
+                                                  '<td><input type="hidden" id="orderitemid" name="itemorderId" value=' + orderitemid_var + '></tr>';
+
+                                $(tableid).append(newitem);
+                            }
+                                                                          
+                        }
+                    }  
+                }
+            });
+        });
+
+      </script>
+
+}
+
+
+  

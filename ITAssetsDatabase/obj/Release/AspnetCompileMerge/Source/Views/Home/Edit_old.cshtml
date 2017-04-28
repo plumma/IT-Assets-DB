@@ -1,0 +1,115 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.Order>
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HDRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PORef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupplierRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourierRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CostCentreOveride)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectCodeOveride)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuoteAttachment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RaisedById)
+            @Html.EdDisplayNameFor(model => model.RaisedById)@Html.DisplayNameFor(model => model.RaisedById)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StaffId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderConfirmed)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+
+
+          @foreach (var n in item.OrderItems)
+                    {
+                        @Html.DisplayFor(modelItem => n.EndUser.FirstName)
+
+                        foreach (var i in n.Items) 
+                        
+                        { 
+                            @Html.DisplayFor(modelItem => i.Product.Model)
+                        }
+
+                            
+                    }
+        <td>
+            @Html.DisplayFor(modelItem => item.HDRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PORef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupplierRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourierRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CostCentreOveride)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectCodeOveride)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuoteAttachment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RaisedById)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StaffId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderConfirmed)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

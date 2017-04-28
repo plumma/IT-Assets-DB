@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ITAssetsDatabase.Models.Item>
+
+<table>
+        <tr>                
+            <th>Type</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Quantity</th>
+        </tr>
+
+@foreach (var item in Model) {
+   
+        <tr id="@item.Id">
+
+            <td>@Html.DisplayFor(modelItem => item.Product.ProductType.Type)</td>
+            <td>@Html.DisplayFor(modelItem => item.Product.ProductMake.Make)</td>
+            <td>@Html.DisplayFor(modelItem => item.Product.Model)</td>
+            <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+            <td><a href="#" class="RemoveLink" data-id="@item.Id">Remove</a></td>
+        </tr>   
+}
+</table>
+
+<script>
+    $(function () {                
+        $(".RemoveLink").click(function () {
+            // Get the id from the link
+            var recordToDelete = $(this).attr("data-id");
+            if (recordToDelete != '') {
+             // Perform the ajax post
+                $.post("RemoveItem", { "id": recordToDelete },
+                    function (data) { $("#" + data).remove(); });
+                }
+        });
+
+    });
+
+
+</script>

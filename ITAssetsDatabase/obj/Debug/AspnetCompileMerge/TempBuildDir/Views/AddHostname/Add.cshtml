@@ -1,0 +1,57 @@
+﻿@model ITAssetsDatabase.Models.AddHostname.AddHostnameViewModel
+
+@{
+    ViewBag.Title = "AddHostname";
+}
+
+<h2>AddHostname</h2>
+
+@using (Html.BeginForm("Add", "AddHostname")) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    
+<table>
+
+            <tr>
+                <td style="width:150px;text-align:left">Asset Location:-</td>
+                <td>@Html.DropDownList("Locations", @Model.Locations, String.Empty) </td>
+
+            </tr>
+
+            <tr>
+                <td style="width:inherit;text-align:inherit">Please Choose type:-</td>
+                <td>@Html.DropDownList("Type", @Model.Type, String.Empty) </td>
+
+            </tr>
+
+
+             <tr>
+                <td style="width:inherit;text-align:inherit">Your details:-</td>
+                <td>@Html.DropDownList("Staff", @Model.Staff, String.Empty) </td>
+
+             </tr>
+
+
+              <tr>
+                <td style="width:inherit;text-align:inherit">Add hostname to AD?</td> 
+                <td style="width:inherit;text-align:left"><input type="checkbox" name="AddtoAD" value="True"></td>           
+             </tr>
+
+            <tr>
+                <td colspan="2"><input type="submit" value="Fetch" /></td>                
+            </tr>
+
+
+            
+</table>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

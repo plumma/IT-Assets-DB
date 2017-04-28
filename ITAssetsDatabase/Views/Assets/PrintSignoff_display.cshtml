@@ -1,0 +1,206 @@
+﻿@model ITAssetsDatabase.Models.Assets.PrintSignoff
+ 
+@{
+    Layout = null;
+}
+
+
+
+<style type="text/css">
+    
+
+  #A4_page {
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  border: 3px solid white;
+  font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+}
+
+ #container  {
+      /*padding:70px 50px 80px 50px;*/
+      margin:30px;
+      border: 3px solid white;
+      /*border-color:red;*/
+  }
+
+    .FieldDisplay {
+    
+        padding:10px;
+    
+    }
+
+    .logo {
+
+        color:#6c254a;
+        font-size:36px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    .site-title {
+        color: #8f2a68;
+        font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+        margin: 0;
+        margin-bottom:60px;
+}
+
+    #titles {
+
+        padding-left:20px;
+        background-color:#6c254a;
+        color:white;
+        font-size:17px;
+        height:30px;
+        padding-top:5px;
+        font-weight: bold;
+        text-align:center;
+    }
+
+    #titles1 {
+
+        padding-left:20px;
+        background-color:darkgray;
+        color:white;
+        height:20px;
+        padding-top:5px;
+    }
+
+    #spacer {
+
+       border: 3px solid darkgrey;
+       height:20px;
+    }
+
+
+    #buildinfo {
+
+       border: 3px solid darkgrey;
+
+    }
+
+
+    @@media print {
+
+        .no-print {
+            display: none;
+        }
+
+        #A4_page {
+            display: block;
+        }
+    }
+
+    .table {
+        padding-top: 50px;
+    }
+
+    .row {
+        text-align:left;
+        margin-bottom: 10px;   
+    }
+
+    .cell{
+
+        width:400px;
+        display:table-cell;
+    }
+
+    .font {
+        color:red;
+    }
+
+
+</style>
+
+
+
+
+    <div id="A4_page">
+
+
+        <div id="container">
+
+            <div class="logo">PLUMM STUDIOS Ltd</div>
+            <div><img src="~/Images/Plumm Studios Title Bar.png" style="width:350px" /></div>
+            <p class="site-title">IT SUPPORT SOLUTIONS</p>
+
+            <div id="titles">
+
+                Device User Sign off
+
+            </div>
+
+            <div></div>
+
+            <div id="titles1">
+                Section 1 - End User Information
+            </div>
+            <div id="buildinfo">
+                <div class="FieldDisplay">Full Name: &nbsp  @Html.DisplayFor(model => model.EndUser) </div>
+                <div class="FieldDisplay">Email Address: &nbsp @Html.DisplayFor(model => model.Email)      </div>
+                <div class="FieldDisplay">Contact Number:&nbsp @Html.DisplayFor(model => model.Number)      </div>
+                <div class="FieldDisplay">Logon Domain:&nbsp @Html.DisplayFor(model => model.UserDomain)         </div>
+            </div>
+
+
+            <div id="titles1">
+                Section 2 - Request Reference Information
+            </div>
+            <div id="buildinfo">
+            <div class="FieldDisplay">Helpdesk ticket Ref:&nbsp @Html.DisplayFor(model => model.HelpdeskRef)   </div>
+            <div class="FieldDisplay">Purchase Order Ref: &nbsp @Html.DisplayFor(model => model.PORef)  </div>
+            <div class="FieldDisplay">Purchase Request Ref:&nbsp @Html.DisplayFor(model => model.PRRef) </div>
+            </div>
+        
+            <div id="titles1">
+                Section 3 - Device Information
+            </div>
+            <div id="buildinfo">
+                <div class="FieldDisplay">Type:&nbsp @Html.DisplayFor(model => model.Type)  </div>
+                <div class="FieldDisplay">Make:&nbsp @Html.DisplayFor(model => model.Make)  </div>
+                <div class="FieldDisplay">Model:&nbsp @Html.DisplayFor(model => model.Model)  </div>
+                <div class="FieldDisplay">Serial Number: &nbsp @Html.DisplayFor(model => model.SerialNo)  </div>
+                <div class="FieldDisplay">Asset Number:&nbsp @Html.DisplayFor(model => model.Asset)  </div>
+                <div class="FieldDisplay">MAC Address:&nbsp @Html.DisplayFor(model => model.MACAddress)  </div>
+              </div> 
+
+            <div id="titles1">
+                Section 4 - Build Information
+            </div>
+            <div id="buildinfo">
+                <div class="FieldDisplay">Hostname:&nbsp @Html.DisplayFor(model => model.Hostname)  </div>
+                <div class="FieldDisplay">Build: &nbsp @Html.DisplayFor(model => model.Build) </div>
+                <div class="FieldDisplay">Domain:&nbsp @Html.DisplayFor(model => model.DeviceDomain)   </div>                
+            </div>
+
+
+            <div class="table">
+
+                <div class="row">
+                    <div class="cell">User Name:&nbsp&nbsp&nbsp&nbsp&nbsp @Html.DisplayFor(model => model.EndUser) </div>
+                    <div class="cell">Engineer Name :&nbsp&nbsp&nbsp @Html.DisplayFor(model => model.Engineer)</div>
+                </div>
+
+                <div class="row">
+                     <div class="cell">User Sign off:&nbsp&nbsp&nbsp&nbsp _____________________ </div>
+                     <div class="cell">Engineer Sign off:&nbsp&nbsp&nbsp&nbsp_____________________ </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell">Date:&nbsp&nbsp&nbsp&nbsp_________________  </div>
+                    <div class="cell"> </div>
+                </div>
+
+             
+             </div>   
+            
+  </div>
+</div>
+
+
+

@@ -1,0 +1,99 @@
+﻿@model ITAssetsDatabase.Models.Assets.SignoffSheetUploadViewModel
+
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+<style>
+
+    select {
+    height: 33px;
+    width: 200px;
+    background-color: #FFF7F7;
+    padding-left: 27px;
+}
+
+    p {
+        text-align:center;
+    }
+
+    /*input {
+        width: 200px;
+        
+        	
+      
+    }*/
+
+    div {
+
+    margin-bottom:15px;
+    }
+
+    input, .upload {    
+	
+        width: 190px;
+        height: 25px;
+    }
+
+
+</style>
+
+
+
+@*@using (Html.BeginForm("SignOffSheetsUpload", "Assets"))*@
+@using (Html.BeginForm("SignOffSheetsUpload", "Assets", FormMethod.Post, new { enctype = "multipart/form-data", id = "thisForm" }))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>SignoffSheetUploadViewModel</legend>
+
+        @Html.HiddenFor(model => model.AssetId)
+
+
+        <div id="right">
+            <div>
+                Upload sheet for:-
+                @Html.DropDownList("Enduser", Model.Endusers)
+            </div>
+        </div>
+        
+        
+        <div id="left">
+            <div>      
+                Browse to sheet:-          
+                <input class="upload" type="file" name="fileupload_object" id="file1" />
+                @Html.HiddenFor(model => model.Name)
+            </div> 
+        </div>
+                
+
+        <p>
+            <input id="upload" type="Submit"  value="Upload" />
+        </p>
+    </fieldset>
+}
+
+
+    <script>
+           
+
+            $("#upload").click(function (e) {
+
+                
+                e.preventDefault();
+
+                var endusername = $('#Enduser option:selected').text();
+                $('#Name').val(endusername);
+
+                //alert($('#Name').val());
+                //alert($('#Enduser').val());
+                
+                $("#thisForm").submit();             
+         });
+
+    </script>
+

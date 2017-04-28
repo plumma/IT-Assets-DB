@@ -1,0 +1,122 @@
+﻿@using System.DirectoryServices.AccountManagement
+@model IEnumerable<UserPrincipal>
+
+
+@if (Model != null)
+{
+
+    if (Model.Count() == 0)
+    {
+    
+              <text> No results found...</text>
+      }
+    else
+    {  
+
+<table id="searchresults">
+
+    <tr style="background-color:#B4B4B4;color:black;font-weight:bold">                                    
+        <td id="name" style="border:solid;border-width:1px;border-color:white;text-align:left">Name</td>
+        <td style="border:solid;border-width:1px;border-color:white;text-align:left">Email Address</td>        
+        <td style="border:solid;border-width:1px;border-color:white;text-align:left">logon</td>              
+        <td style="width:50px;border:solid;border-width:1px;border-color:white;text-align:left"></td>
+        <td style="width:1px;border:solid;border-width:1px;border-color:white;text-align:left"></td>
+
+        <td style="width:1px;display:none" ></td>
+        <td style="width:1px;display:none" ></td>
+        <td style="width:1px;display:none" ></td>
+    </tr>
+     
+
+@foreach (var principal in Model)
+{
+    <tr>        
+        <td style="white-space: nowrap;text-align:left">@principal.Name</td>        
+        <td style="width:100px;text-align:left">@principal.EmailAddress</td>
+        <td style="width:100px;text-align:left">@principal.SamAccountName</td>       
+        
+        <td style="width:50px"> <button style="width:40px;height:18px;vertical-align:central" type=submit>Add</button></td>
+
+        <td style="width:1px;display:none" >@principal.Sid</td>
+        <td style="width:1px;display:none" >@principal.GivenName</td>
+        <td style="width:1px;display:none" >@principal.MiddleName</td>
+        <td style="width:1px;display:none" >@principal.Surname</td>
+        <td style="width:1px;display:none" >@principal.Context</td>
+         
+    </tr>
+}
+   
+</table>    
+    }
+}
+else 
+ {    
+        <table>    
+            <tr><td  colspan="5">Please enter surname in search</td></tr>           
+        </table>
+   }
+
+<script>                
+
+    $('#searchresults tbody tr td button').click(function (e) 
+    
+    {
+        // Check for duplicate SID's
+
+        var SID = $(this).closest('tr').find('td').eq(4).text();
+
+        var flag = false;
+        
+        for (var i = 0; i < SIDarray.length; i = i + 1) {
+
+            if (SID == SIDarray[i]) {
+                flag = true;
+            }
+        };
+
+        if (flag == false) {
+
+
+            var name = $(this).closest('tr').find('td').eq(0).text();
+            var email = $(this).closest('tr').find('td').eq(1).text();
+            var logon = $(this).closest('tr').find('td').eq(2).text();
+            
+            var givenname = $(this).closest('tr').find('td').eq(5).text();
+            var middlename = $(this).closest('tr').find('td').eq(6).text();
+            var surname = $(this).closest('tr').find('td').eq(7).text();
+            var context = $(this).closest('tr').find('td').eq(8).text();
+
+
+
+            SIDarray.push(SID);
+
+            var adduserrow = '<tr class=' + "allusers" +'>' +
+                             '<td style="white-space: nowrap;text-align:left">' + name + '</td>' +
+                             '<td style="width:100px;text-align:left"><input type="text" style="border:none" name="Email" value="' + email + '" readonly>' + '</td>' +
+                             '<td style="width:100px;text-align:left"><input type="text" style="border:none" name="DomainLogon" value="' + logon + '" readonly>' + '</td>' +
+                             '<td style="width:50px"> <button id="Remove" style="width:55px;height:20px;vertical-align:central" type=submit>Remove</button></td>' + '</td>' +
+                             '<td style="width:1px;display:none">'+ SID + '<input type="hidden" name="SID" value="' + SID + '"></td>' +
+                             '<td style="width:1px;display:none"><input type="hidden" name="FirstName" value="' + givenname + '"></td>' +
+                             '<td style="width:1px;display:none"><input type="hidden" name="MiddleName" value="' + middlename + '"></td>' +
+                             '<td style="width:1px;display:none"><input type="hidden" name="SecondName" value="' + surname + '"></td>' +                                                         
+                             '<tr>'
+            
+            $('#header').removeAttr('Hidden');
+            $('#userlist').after(adduserrow);
+            $('#dialog').dialog("close");
+
+        }
+
+        else {
+            alert("This user is already in the list muppet");
+            }
+
+        
+
+    });
+
+    
+
+</script>
+
+    

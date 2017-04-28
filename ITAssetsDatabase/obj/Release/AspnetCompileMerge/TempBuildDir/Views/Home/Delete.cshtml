@@ -1,0 +1,82 @@
+﻿@model ITAssetsDatabase.Models.Order
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Order</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HDRef)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HDRef)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PRRef)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PRRef)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PORef)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PORef)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CostCentreOveride)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CostCentreOveride)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProjectCodeOveride)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProjectCodeOveride)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.QuoteAttachment)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QuoteAttachment)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RaisedBy.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RaisedBy.FirstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Staff.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Staff.FirstName)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

@@ -1,0 +1,624 @@
+﻿@model ITAssetsDatabase.Models.Assets.DetailsViewModel
+
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<style>
+
+    tr {
+
+        background-color: #e1e1e1;
+                        
+    }
+
+    td {
+
+        border: 1px solid white;
+    }
+
+
+
+
+    #wrapper {
+        background-color: white;
+        box-shadow: 5px 5px 5px #888888;
+        padding: 40px;
+        width: 75% 
+    }
+
+    input {
+        width: 400px;        
+        padding-left: 25px;
+        padding: 6px 10px 7px 30px;
+        font-size: 14px;
+        background-color: #FFF7F7;     
+    }
+
+
+    input:focus, select:focus { 
+       
+        -webkit-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        -moz-box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+        box-shadow: 0px 0px 0px 1px rgba(242,17,17,1);
+
+        background-color: #f3eeee;
+	    
+    }
+    
+
+    select {
+
+        height:33px;
+        width:440px;
+        background-color: #FFF7F7;      
+        padding-left:27px;  
+    }
+      
+
+
+    #textBody {
+        margin: 20px; /*border:medium solid;*/
+    }
+
+
+    .Lookup {
+        background: transparent url('../Images/icon_search_trans.png') 8px 8px no-repeat;
+        background-color: #FFF7F7;       
+    }
+
+    .Helpdesk {
+        background: transparent url('../Images/F.png') 8px 8px no-repeat;
+    }
+
+    #ResolutionText {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 670px;
+        word-wrap: break-word;
+    }
+
+
+
+    #CloseBtn {
+        clear: both;
+        padding-top: 80px;
+        margin-left: 310px;
+        /*float:right;*/
+        position: relative;
+    }
+
+    /*.editor-label {
+       clear: both;       
+        float: left;*/       
+       /*border:medium solid;*/
+        /*width: 30%;
+        padding-bottom:10px;
+        margin-bottom:10px;
+        
+    }*/
+
+    /*.editor-field {
+        float: right;       
+        border:thin solid;
+        width: 65%;
+        padding-bottom:10px;
+        padding-left:10px;
+        border-radius:3px;
+        margin-bottom:10px;*/
+
+
+        /*color: darkred;  */
+        /*font-weight:600;
+        background-color:#faf1f1;
+    }*/
+
+
+      .editor-label {
+       clear: both;       
+       float: left;
+       width: 30%;
+       padding-bottom:10px;
+       margin-bottom:10px;
+        
+    }
+
+    .editor-field {
+        float: right;
+        width: 400px;     
+        padding: 6px 10px 7px 30px;
+        border-radius:5px;        
+        margin: 5px 0 6px 0;
+        font-size: 14px;        
+        background-color:#FFF7F7;     
+        box-shadow:inset rgba(0,0,0,0.75) 0 1px 2px;
+        color:black;    
+    }
+
+
+
+    h4 {
+        margin-bottom: 40px;
+        clear:both;
+        margin-top: 30px;
+    }
+
+    p {
+        clear: both;
+    }
+
+
+    textarea {
+        width: 642px;
+        height: 147px;
+    }
+
+    .notes {
+         
+        border:thin solid;        
+        border-radius:5px;
+        margin-bottom:10px;     
+        padding-top:0px;     
+        height:50px;   
+        text-align:left;
+        padding:5px;
+
+    }
+
+    #myheader { 
+                float:left;
+                margin-bottom: 40px;
+                clear: both;
+                margin-top: 30px;
+                font-size: 1.1em;
+                font-weight:700
+    }
+
+    #status {
+
+        float:right;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        font-size:x-large;
+        color:darkred;
+    }
+
+
+
+</style>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+
+<fieldset>
+   <legend>RegisterAssetViewModel</legend>
+
+    <div id="wrapper">
+
+        <div id="textBody">
+
+            <h2 style="text-align:center">Asset Details</h2>
+
+
+            @*     Request Details   *@
+
+            <div id="myheader">Device Details</div>
+
+       
+            <div class="editor-label">Status</div>
+            <div class="Status">@ViewBag.status</div>
+
+            <div class="editor-label">Purchase Request Reference</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.PORef)</div>
+
+            <div class="editor-label">Purchase Order Reference</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.PRRef)</div>
+
+            <div class="editor-label">Device Asset Number</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.AssetNo)</div>
+
+            <div class="editor-label">Device Serial Number</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.SerialNo)</div>
+
+            <div class="editor-label">MAC Address</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.MAC_Address)</div>
+
+            <div class="editor-label">Build</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.Build.BuildName)</div>
+
+            <div class="editor-label">Domain</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.Build.Domain)</div>
+
+            <div class="editor-label">Hostname</div>
+            @*<div class="editor-field">@Html.DisplayFor(model => model.Asset.Hostname.FullHostname)@Html.DisplayFor(model => model.Asset.HostnameXafinity.FullHostname)</div>*@
+            <div class="editor-field">@ViewBag.Hostname</div>
+
+            <div class="editor-label">Device Type</div>
+
+            <div class="editor-field">
+                @Html.DisplayFor(model => model.Asset.Device.Type) ->
+                @Html.DisplayFor(model => model.Asset.Device.Make) ->
+                @Html.DisplayFor(model => model.Asset.Device.Model)
+            </div>
+
+
+            <div class="editor-label">Registered By</div>
+            <div class="editor-field">@Html.DisplayFor(model => model.Asset.Staff.FullName)</div>
+
+            <h4 style="padding-top:30px">Signoff Sheets</h4>
+
+
+            <table>
+                <tr class="TableHeader">
+
+                    <td style="text-align:center;border:solid;border-width:1px;border-color:white;width:100px">Upload Date</td>
+                    <td style="border:solid;border-width:1px;border-color:white;width:200px">End User</td>
+                    <td style="width:150px;border:solid;border-width:1px;border-color:white">Sheet</td>                                                            
+                </tr>
+
+            @if (Model.Asset.AssetSignoff.Count != 0)
+            {
+
+                foreach (var item in Model.Asset.AssetSignoff)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(x => item.CreateDate)
+                        </td>
+                        <td>
+                            @item.Employee.FullName
+                        </td>
+                        <td>
+                            <a href="../../File Uploads/@item.Uploadpath" target="_new"><img src="~/Images/Signoffsheeticon.png" style="width:19px;height:22px;border:0"></a>
+                        </td>
+                    </tr>
+                }
+
+            }
+
+            else
+            {
+                <tr>
+                    <td colspan="3" style="color:black;font-style:italic">No sign off sheets uploaded for this asset</td>
+
+                </tr>
+
+            }
+
+
+
+                </table>
+
+
+                    <h4 style="padding-top:30px">Assignment Trail</h4>
+
+                    <table>
+                        <tr class="TableHeader">
+
+                            <td style="text-align:center;border:solid;border-width:1px;border-color:white">Date</td>
+                            <td style="border:solid;border-width:1px;border-color:white">Ref</td>
+                            <td style="width:150px;border:solid;border-width:1px;border-color:white">End User</td>
+                            <td style="width:150px;border:solid;border-width:1px;border-color:white">Requester</td>
+                            <td style="border:solid;border-width:1px;border-color:white">Tech</td>
+                            <td style="width:70px;border:solid;border-width:1px;border-color:white;width:80px">Status</td>
+                        </tr>
+
+
+
+
+                        @foreach (var item in Model.Audit)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(x => item.CreatedDate)
+                                </td>
+                                <td>
+                                    @item.HelpdeskRef
+                                </td>
+                                <td>
+                                    @item.EndUserFullName
+                                </td>
+                                <td>
+                                    @item.RequesterFullName
+                                </td>
+
+                                <td>
+                                    @item.Staff
+                                </td>
+
+                                <td>
+                                    @item.AssetStatus
+
+                                </td>
+
+                            </tr>
+
+
+                        }
+
+                    </table>
+
+                    <p style="text-align:center">
+                        @Html.ActionLink("Cancel", "Index")
+                    </p>
+
+
+
+</div>
+
+                    
+        </div>
+    </fieldset>
+
+}
+
+
+
+
+
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/themes/base/css")   @* Allows Background to go grey in Modal*@
+    <link href="~/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <script src="~/Scripts/Autosize/jquery.autosize.min.js"></script>
+    <script src="~/Scripts/Autosize/jquery.autosize.js"></script>
+    <script src="~/Scripts/plupload-2.1.2/js/plupload.full.min.js"></script>
+    
+    
+
+    <script>
+
+        $(document).ready(function () {
+            
+                    
+            // LookupRequester
+        
+            $('#LookupRequester').autocomplete({
+                
+                source: function (request, response) {
+                    var filter = $("#DomainId").val();
+                    $.getJSON("/Assets/LookupPersonAutocomplete", { term: request.term, DomainId: filter }, response);
+                },
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupRequester").val(ui.item.label);  // Displays Label in box after selection
+                    $("#RequesterSID").val(ui.item.value);
+
+                    $("#RequesterFirstName").val(ui.item.FirstName);
+                    $("#RequesterMiddleName").val(ui.item.MiddleName);
+                    $("#RequesterSurname").val(ui.item.Surname);
+                    $("#RequesterEmail").val(ui.item.Email);
+                    $("#RequesterDomain").val(ui.item.Domain);
+                    $("#RequesterDomainLogon").val(ui.item.Logon);
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+
+            $('#LookupEndUser').autocomplete({
+
+                source: function (request, response) {
+                    var filter = $("#DomainId").val();
+                    $.getJSON("/Assets/LookupPersonAutocomplete", { term: request.term, DomainId: filter }, response);
+                },
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupEndUser").val(ui.item.label);  // Displays Label in box after selection
+                    $("#AssigneeSID").val(ui.item.value);
+                    
+                    $("#AssigneeFirstName").val(ui.item.FirstName);
+                    $("#AssigneeMiddleName").val(ui.item.MiddleName);
+                    $("#AssigneeSurname").val(ui.item.Surname);
+                    $("#AssigneeEmail").val(ui.item.Email);
+                    $("#AssigneeDomain").val(ui.item.Domain);
+                    $("#AssigneeDomainLogon").val(ui.item.Logon);
+
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+            //  LookupLocation
+
+            $('#LookupLocation').autocomplete({
+                source: '/Assets/LookupLocationAutocomplete',
+                //delay: 500,
+                //minLength: 2,
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupLocation").val(ui.item.label);  // Displays Label in box after selection
+                    $("#LocationId").val(ui.item.value);
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+            //  Lookup Device Model
+
+            $('#LookupDeviceModel').autocomplete({
+                source: '/Assets/LookupDeviceModelAutocomplete',
+                //delay: 500,
+                //minLength: 2,
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupDeviceModel").val(ui.item.label);  // Displays Label in box after selection
+                    $("#DeviceId").val(ui.item.value);
+                },
+                focus: function (event, ui) {
+                    event.preventDefault();
+                    //$("#customer-search").val(ui.item.label);
+                }
+
+            });
+
+
+            //  Lookup Build
+
+
+            $('#LookupBuild').autocomplete({
+
+                source: function (request, response) {
+                    var filter = $("#DeviceId").val();
+                    $.getJSON("/Assets/LookupBuildAutocomplete", { term: request.term, filter: filter }, response);
+                },
+
+
+                select: function (event, ui) {
+                    event.preventDefault();  // Stops the deafult action of displaying the Value rather than the label in the box after selection
+                    $("#LookupBuild").val(ui.item.label);  // Displays Label in box after selection
+                    $("#BuildId").val(ui.item.value);
+                    $("#BuildDomain").val(ui.item.build_domain);
+                }, 
+                focus: function (event, ui) {
+                    event.preventDefault();                  
+                }
+
+            });
+
+
+
+            //Start of Fetch  //
+
+            $('#fetch').click(function () {
+
+
+                // Check Location, Device, Build fields are filled in
+                
+                var isValid = true;
+
+                $('#LookupLocation,#LookupDeviceModel,#LookupBuild,#LocationId,#DeviceId,#BuildId').each(function () {
+
+                    if ($.trim($(this).val()) == "" || $(this).val() == 0 ) {
+
+                        $(this).css({
+                            "border": "1px solid red",
+                            "background": "#FFCECE"
+                        });
+
+                        $("#fetcherror").css("display", "block");
+                        isValid = false;
+                    }
+
+                    else
+
+                    {
+                        $(this).css({
+                            "border": "",
+                            "background": ""
+                        });                       
+                        
+                    }
+
+                    if (isValid == true) $("#fetcherror").css("display", "none");
+                    
+                });
+
+
+           
+
+                if (isValid == true)
+                {
+                    $('#please-wait').css('display', 'block');
+
+                    var LocationId = $('#LocationId').val();
+                    var DeviceId = $('#DeviceId').val();
+                    var StaffId = $('#StaffId').val();
+                    var BuildId = $('#BuildId').val();
+          
+                    $.ajax({
+                        url: "/Assets/FetchHostname",
+                        data: { LocationId: LocationId, DeviceId: DeviceId, StaffId: StaffId, BuildId: BuildId },
+                        type: "GET"
+                    }).done(function (mydata) {
+
+                        $('#please-wait').css('display', 'none');                                            
+                        $('#HostnameId').val(mydata.Id);
+                        $('#Hostname').val(mydata.FullHostname);
+                        $('#Hostname').focus();
+
+                    });
+
+                }
+
+       
+            });   
+                   
+
+
+            // End of Fetch  //
+            
+
+           
+            // MAC Address Autocharacters
+
+                $("#MAC_Address").live("keyup", function (event) {
+                    var limitField = $(this).val().trim().length;
+                    var limit = "17"
+                    if (event.keyCode != 8) {
+                        if (limitField == 2) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        } else if (limitField == 5) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        } else if (limitField == 8) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        } else if (limitField == 11) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        }
+                        else if (limitField == 14) {
+                            var fax_value = $(this).val().trim().concat(':');
+                            $("#MAC_Address").val(fax_value);
+                        }
+                    }
+                    if (limitField > limit) {
+                        $("#MAC_Address").val($(this).val().trim().substring(0, limit));
+                    }
+                });
+
+
+
+            // Register Asser
+
+                $('#register').click(function () {
+
+                        $("#thisForm").submit();
+
+                    });
+
+
+        
+
+        })
+    </script>
+ 
+}

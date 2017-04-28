@@ -1,0 +1,286 @@
+﻿@model ITAssetsDatabase.Models.Article
+
+<style>
+
+        .layout {
+                
+        margin-top:15px;
+        border: none;
+        padding:0; 
+        /*min-height:333px;*/
+        background-color: white;
+        border-radius: 4px;
+        box-shadow:rgba(0,0,0,0.3) 0 1px 3px;
+        background:#fff; z-index:3;
+  	    position: relative;
+	    overflow: hidden;        
+	    -webkit-transition: -webkit-transform .5s ease-in-out;
+	    -moz-transition: -moz-transform .5s ease-in-out;
+	    -o-transition: -o-transform .5s ease-in-out;
+	    -ms-transition: transform .5s ease-in-out;  
+        
+    }
+
+    .layout ul {
+
+         list-style-type:none;
+         margin: 0 auto;
+         width: 860px;
+         border:0px;
+         padding:0px;         
+    }
+
+
+    #view_detailed {
+
+        display:none;
+    }
+    
+     .layout li {                
+     height: 53px; padding: 20px 0 20px 0px;
+     min-height:48px; 
+     border-bottom:1px solid #dedede;         
+    }
+
+    #results_wrapper {
+
+        z-index:1;  /* Stops the Drop down box getting hidden behind this wrapper */
+    }
+
+
+     #resultsheader
+             {
+                 height:50px; border-bottom:1px solid #dedede;    
+                }
+
+
+    #left {
+
+    /*border:1px solid red;*/
+    float:left;
+    width:15%;
+    height:50px;
+    background-repeat:no-repeat;
+    background-position: 30%;
+    /*background-size:50px 50px; */
+    background-size: contain;
+    margin:0px;
+    
+    
+    }
+
+    #right {
+        /*border: 1px solid magenta;*/        
+        /*width: 80%;*/
+        /*height: 53px;*/
+    }
+
+  #right h3 {
+
+        overflow-x:hidden;
+        overflow-y:hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        margin:0px;
+        border:0px;
+        padding:0px;
+    }
+
+
+  .desc {
+
+        overflow-x:hidden;
+        overflow-y:hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        margin:0px;
+        border:0px;
+        padding:0px;
+        
+    }
+
+    #count {
+        position:absolute; top:15px; left:15px; visibility:visible; font-size:13px; color:#666; 
+    }
+
+     #noresults {
+        position:relative; top:30px;visibility:visible; font-size:13px; color:#666; margin: 0 auto; width:800px;
+    }
+
+
+.toggle { float:right; padding:10px; padding-right:20px}
+
+.toggle .view-toggle-button { float:left;  width:28px; height:28px; cursor:pointer; border:1px solid #c0c0c0; }
+
+.toggle .view-toggle-button { background-repeat:no-repeat; background-position:50% 50%; }
+
+.toggle .view-toggle-button img { display:block; margin:10px auto 0; }
+
+.toggle #grid-view-button { border-right:none;
+	-webkit-border-top-left-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius:4px 0 0 4px;
+	-o-border-radius:4px 0 0 4px;
+	-khtml-border-radius:4px 0 0 4px;
+	 border-radius:4px 0 0 4px; 
+	 background-image:url('https://support.apple.com/kb/resources/images/view_grid_inactive.png');
+
+}
+    .toggle #grid-view-button.active {
+        background-image: url('https://support.apple.com/kb/resources/images/view_grid_active.png');
+    }
+
+
+.toggle #list-view-button { -webkit-border-bottom-right-radius:4px;
+	-moz-border-radius:0 4px 4px 0;
+	-o-border-radius:0 4px 4px 0;
+	-khtml-border-radius:0 4px 4px 0;
+    border-radius:0 4px 4px 0;
+	 background-image:url('https://support.apple.com/kb/resources/images/view_list_inactive.png');
+     
+}
+.toggle #list-view-button.active {
+	background-image:url('https://support.apple.com/kb/resources/images/view_list_active.png');
+
+}
+
+
+#more-results-wrap {  padding:18px 0 20px; text-align: center; background:url('https://km.support.apple.com/kb/resources/images/divider.jpg') no-repeat 50% 0; /*z-index:-1;*/ 
+	-webkit-transition: margin .5s ease-in-out;
+	-moz-transition: margin .5s ease-in-out;
+	-o-transition: margin .5s ease-in-out;
+}
+
+
+
+
+    </style>
+
+
+        @* Simple View *@
+
+        <div id="results_wrapper" class="layout">
+
+            <div id="resultsheader">
+                    <div id="toggle" class="toggle">
+                    <div id="grid-view-button" class="view-toggle-button active"></div>
+                    <div id="list-view-button" class="view-toggle-button"></div>
+                </div>
+            </div>
+
+         <div id="view_basic">
+
+                <ul id="ul_basic">
+                  
+                        <li>
+                            <div id="left" style="background-image: url(' @Model.ArticleType.ArticleTypeImage')">
+                               
+                            </div>
+
+                            <div id="right">
+                                <h3>
+                                    @Html.ActionLink(Model.Summary, "Details", new { id = Model.id }, new { target = "_blank" })
+                                </h3>
+                                <div class="desc">
+                                    @Model.Details
+                                </div>
+                            </div>
+                        </li>
+                   </ul>
+
+             <div id="more-results-wrap">
+
+             </div>
+
+
+            </div>
+
+
+            
+            
+            
+            <div id="view_detailed">
+
+                <ul id="ul_detailed">                   
+
+                        <li style="height:auto;padding-bottom:30px">
+                         
+                            <div id="right">
+
+                                <div style="font-weight: bold;font-size: 1.17em;padding-bottom:5px">
+                                    @Html.ActionLink(Model.Summary, "Details", new { id = Model.id }, new { target = "_blank" }) <span style="font-weight: normal;font-style: italic;font-size:small"> (Id = @Model.id)) </span>
+                                </div>
+
+                                <div>
+                                    Application Name: @Model.Application.AppName
+                                </div>
+
+
+                                <div>
+
+                                    Category: @Model.ArticleCategory.Category
+                                </div>
+
+                                <div>
+                                    Type:  @Model.ArticleType.Name
+                                </div>
+
+                                <div style="float:right">
+                                    Submitted By: @Model.Staff.SecondName
+                                    on @Model.CreatedDate
+                                </div>
+
+                            </div>
+
+                        </li>
+                    
+                </ul>
+
+
+                <div id="more-results-wrap">
+                </div>  
+
+            </div>
+
+</div>
+
+ 
+<script>
+
+    $(document).ready(function () {       
+        $('#grid-view-button').click(function () {
+
+
+
+            if ($(this).attr('class') == "view-toggle-button") {
+
+
+                $('#grid-view-button').attr('class', 'view-toggle-button active');
+                $('#list-view-button').attr('class', 'view-toggle-button');
+                $('#view_basic').css("display", "block");
+                $('#view_detailed').css("display", "none");
+
+            }
+
+        });
+
+
+        $('#list-view-button').click(function () {
+
+
+
+            if ($(this).attr('class') == "view-toggle-button") {
+
+                $('#list-view-button').attr('class', 'view-toggle-button active');
+                $('#grid-view-button').attr('class', 'view-toggle-button');
+                $('#view_basic').css("display", "none");
+                $('#view_detailed').css("display", "block");
+
+
+            }
+
+        });
+    });
+
+
+</script>

@@ -1,0 +1,1079 @@
+H:\Dev\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+H:\Dev\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+H:\Dev\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+H:\Dev\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+H:\Dev\ITAssetsDatabase\bin\EntityFramework.dll
+H:\Dev\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+H:\Dev\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+H:\Dev\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+H:\Dev\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\Dev\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+H:\Dev\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+H:\Dev\ITAssetsDatabase\bin\System.Spatial.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.Helpers.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.Http.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.Mvc.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.Optimization.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.Razor.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.WebPages.dll
+H:\Dev\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+H:\Dev\ITAssetsDatabase\bin\WebGrease.dll
+H:\Dev\ITAssetsDatabase\bin\EntityFramework.xml
+H:\Dev\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+H:\Dev\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.Helpers.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.Http.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.Mvc.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.Razor.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.WebPages.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+H:\Dev\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+H:\Dev\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+H:\Dev\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+H:\Dev\ITAssetsDatabase\bin\System.Spatial.xml
+H:\Dev\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+H:\Dev\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+H:\Dev\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+H:\Dev\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+H:\Dev\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+H:\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+H:\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\Dev\PROD\New\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.dd1.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.ddf.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Matt.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.dd1.resources
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.ddf.resources
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Matt.resources
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.fg.resources
+H:\Dev\Prod\AJAX Test version\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.fg1.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.fg.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.fg1.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.gg.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.s.resources
+C:\Users\Matt\Documents\Dev\PROD\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.dd.resources
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.d.resources
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.EnduserSID.resources
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.r.resources
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.df.resources
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.ee.resources
+C:\Users\Matt\Documents\Dev\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.rr.resources
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+H:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.s.resources
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.xml
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\temp\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\temp\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\temp\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.x.resources
+C:\temp\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+C:\temp\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.c.resources
+C:\temp\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\temp\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\temp\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\temp\ITAssetsDatabase\bin\EntityFramework.dll
+C:\temp\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\temp\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\temp\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\temp\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\temp\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\temp\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+C:\temp\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+C:\temp\ITAssetsDatabase\bin\System.Spatial.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.Http.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\temp\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\temp\ITAssetsDatabase\bin\WebGrease.dll
+C:\temp\ITAssetsDatabase\bin\EntityFramework.xml
+C:\temp\ITAssetsDatabase\bin\EntityFramework.SqlServer.xml
+C:\temp\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\temp\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.Http.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\temp\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\temp\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\temp\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\temp\ITAssetsDatabase\bin\System.Spatial.xml
+C:\temp\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\temp\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\temp\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\temp\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\temp\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\temp\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\temp\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations._1.resources
+C:\temp\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations._1.resources
+M:\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Plsworkmother.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.sdf.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.a.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.image.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetTables.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetTablesupdate.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.dfg.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.fdf.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Location123.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.ffd.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll.config
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ICSharpCode.SharpZipLib.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\WebActivatorEx.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.pdb
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.DomainEntity.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Blah.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.g.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.g1.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetAction.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.domain.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.SignOffSheet.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Matt.resources
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.dll
+M:\My Documents\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\WebActivatorEx.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.pdb
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Plsworkmother.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.sdf.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.a.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.image.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetTables.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetTablesupdate.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.dfg.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.fdf.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Location123.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.ffd.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.DomainEntity.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Blah.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.g.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.g1.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetAction.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.domain.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.SignOffSheet.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Matt.resources
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\Backup From Equiniti\Dev\Prod\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll.config
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Devtalk.EF.CodeFirst.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\PagedList.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\WebActivator.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\WebActivatorEx.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.pdb
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\PagedList.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Plsworkmother.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.sdf.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.a.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.image.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetTables.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetTablesupdate.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.dfg.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.fdf.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Location123.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.ffd.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.DomainEntity.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Blah.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.g.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.g1.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.AssetAction.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.domain.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.SignOffSheet.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.Matt.resources
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\DEV Work\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll.config
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Antlr3.Runtime.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\PagedList.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.DirectoryServices.AccountManagement.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Optimization.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\WebActivator.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\WebActivatorEx.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\WebGrease.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\EntityFramework.SqlServer.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.pdb
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Lucene.Net.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\PagedList.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\PagedList.Mvc.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Newtonsoft.Json.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Net.Http.Formatting.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Helpers.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.WebHost.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Mvc.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Razor.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Web.Http.OData.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.Edm.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\Microsoft.Data.OData.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\System.Spatial.xml
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\de\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\es\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\fr\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\it\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ja\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ko\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\ru\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.dll
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.pdb
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.Migrations.April2017.resources
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csproj.GenerateResource.Cache
+C:\Users\Matt\Documents\DEV Projects\IT Assets DB\ITAssetsDatabase\obj\Debug\ITAssetsDatabase.csprojResolveAssemblyReference.cache

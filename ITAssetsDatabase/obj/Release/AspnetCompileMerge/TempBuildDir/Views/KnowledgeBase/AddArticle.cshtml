@@ -1,0 +1,426 @@
+﻿@model ITAssetsDatabase.Models.KnowledgeBase.AddArticleViewModel
+
+@{
+    ViewBag.Title = "AddArticle";
+}
+
+<style>
+
+    .matt-test { background-color:white; box-shadow: 5px 5px 5px #888888; margin:20px;padding:40px}
+
+
+    .autosizetextsummary {
+        width: 500px;
+        height: 20px;
+        padding-top: 15px;
+        padding-left: 15px;
+        resize: none;      
+        border-radius: 4px;
+    }
+
+        .autosizetextdetails {
+        width: 500px;
+        height: 100px;
+        padding-top: 15px;
+        padding-left: 15px;
+        resize: none;      
+        border-radius: 4px;
+    }
+
+
+          .autosizetextresolution {
+        width:500px;
+        height: 100px;
+        padding-top: 15px;
+        padding-left: 15px;
+        resize: none;      
+        border-radius: 4px;
+    }
+
+
+#SearchApp {
+    
+    width:380px; padding: 6px 7px 7px 30px; font-size:14px; border:none; outline:none;
+	background: transparent url('../Images/icon_search.png') 8px 8px no-repeat;
+	box-shadow:inset rgba(0,0,0,0.75) 0 1px 2px;
+    border-radius: 5px;
+	padding-left: 30px\9;
+    background-color:white;
+    height:18px;    
+    
+    /*-webkit-box-shadow:inset rgba(0,0,0,0.75) 0px 1px 2px;
+	-moz-box-shadow:inset rgba(0,0,0,0.75) 0 1px 2px;	 
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;	
+	-moz-padding-start: 3%;	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-webkit-border-top-right-radius:0px;  top right corner
+	-webkit-border-bottom-right-radius:0px; /* bottom right corner */
+    
+}
+
+
+    ui-dialog-title {
+    }
+
+ </style>
+
+
+
+@using (Html.BeginForm("AddArticle", "KnowledgeBase", FormMethod.Post, new { enctype = "multipart/form-data", id="thisForm" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+    <div class="matt-test">
+
+        <h2>Add Knowledgebase Article</h2>
+
+        <fieldset>
+            <legend>AddArticleViewModel</legend>
+
+            <table><tr><td>&nbsp</td></tr></table>
+
+            <table>
+                <tr>
+                    <td colspan="3" style="text-align:left">
+                        <div class="editor-label"> @Html.LabelFor(model => model.Summary)</div>
+                        @Html.ValidationMessageFor(model => model.Summary)
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td colspan="3" style="text-align:left">
+                        <div class="editor-field">@Html.TextAreaFor(model => model.Summary, new { @class = "autosizetextsummary" }) </div>                      
+                        
+                      </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:left">
+                        <div class="editor-label">  @Html.LabelFor(model => model.Details)  
+                                                    @Html.ValidationMessageFor(model => model.Details)</div>
+                        <div class="editor-field">
+                            @Html.TextAreaFor(model => model.Details, new { @class = "autosizetextdetails" })
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:left">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Resolution)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextAreaFor(model => model.Resolution, new { @class = "autosizetextresolution" })
+                            
+                        </div>
+                    </td>
+                </tr>
+
+@* Application Affected *@
+
+                <tr><td>&nbsp</td></tr>
+                <tr><td>&nbsp</td></tr>
+
+                <tr>
+                    <td colspan="2" style="text-align:left">
+                        <div class="editor-label">
+                            <label>Application</label>
+                        </div>
+                        <div>
+                            @Html.TextBox("SearchApp", "", new { placeholder = "Lookup Application"})                            
+                        </div>
+                        <div style="color:red" id="AppErrorMessage"></div>
+                    </td>
+
+                    <td colspan="1" style="text-align:left">                        
+                        <div style="font-size:small">
+                            <a id="AddApp" href="#/">Not Listed?</a>
+                        </div>
+                    </td>
+
+
+                </tr>
+
+@* Category and Article Type Box *@
+
+                
+                <tr><td>&nbsp</td></tr>
+
+                <tr>
+                    <td colspan="3" style="text-align:left">
+                        <div>
+                                @Html.HiddenFor(model => model.ApplicationId)
+                                
+                        </div>
+                    </td>
+                </tr>                                
+                <tr><td>&nbsp</td></tr>
+                
+
+
+                <tr>               
+                    <td style="text-align:left">
+                        <div class="editor-label">
+                            <label>Category</label> 
+                        </div>
+                        <div class="editor-field">
+                            @Html.DropDownListFor(x => x.ArticleCategoryId, Model.ArticleCategoryList)
+                        </div>
+
+                    </td>
+
+                    <td>
+                        <div class="editor-label">
+                            <label>Article Type</label>
+                        </div>
+                        <div class="editor-field">
+                            @Html.DropDownListFor(x => x.ArticleTypeId, Model.ArticleTypeList)
+                        </div>
+
+                    </td>
+
+
+                    <td>
+                        <div class="editor-label">
+                        </div>
+                        <div class="editor-field">
+                        </div>
+
+                    </td>
+
+               
+                </tr>
+
+                <tr>
+                <td colspan="3" style="text-align:left">
+                    <div class="editor-label">&nbsp</div>
+
+                </td>
+            </tr>
+
+
+@* Upload section  *@
+
+                <tr><td>&nbsp</td></tr>
+
+            <tr>
+                <td colspan="3" style="text-align:left">
+                    <div class="editor-label">
+                        <label>Upload Files</label>
+                    </div>
+
+                </td>
+            </tr>
+
+                
+                <tr>
+                    <td style="text-align:left">
+                        <div class="editor-field">
+
+                            @*<input type="file" id="fileupload_object" name="fileupload_object" multiple="multiple" style="float: left;" />*@
+
+                            <input class="upload" type="file" name="fileupload_object" id="file1" />
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="editor-field">
+
+                            <input type="file" name="fileupload_object" id="file2" />
+                        </div>f
+                    </td>
+
+                    <td>
+                        <div class="editor-field">
+
+                        </div>
+                    </td>
+
+                </tr>
+
+            
+                <tr>
+                    <td style="text-align:left">
+                        <div class="editor-field">
+
+                            @*<input type="file" id="fileupload_object" name="fileupload_object" multiple="multiple" style="float: left;" />*@
+
+                            <input class="upload" type="file" name="fileupload_object" id="file3" />
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="editor-field">
+
+                            <input type="file" name="fileupload_object" id="file4" />
+                        </div>
+                    </td> 
+
+                    <td>
+                        <div class="editor-field">
+                            
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <p>
+                            <input type="button" value="Create" id="submitform" />
+
+                        </p>
+                    </td>
+                </tr>             
+
+
+            </table>
+
+            <div id="dialog"></div>  
+    </fieldset>
+
+</div>
+
+}
+
+
+
+<div>
+    <input type="hidden" id="TestApp" />
+</div>
+
+        @*<div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>*@
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/themes/base/css")   @* Allows Background to go grey in Modal*@
+    <link href="~/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <script src="~/Scripts/Autosize/jquery.autosize.min.js"></script>
+    <script src="~/Scripts/Autosize/jquery.autosize.js"></script>
+    <script src="~/Scripts/plupload-2.1.2/js/plupload.full.min.js"></script>
+
+    
+    <script>
+        $(document).ready(function () {
+
+
+            $('#SearchApp').focus(function()
+            
+            {
+                $('#SearchApp').css({ "background-color": "white" });
+            });
+        
+              
+
+            $('.autosizetextsummary').autosize();
+            $('.autosizetextdetails').autosize();
+            $('.autosizetextresolution').autosize();
+
+            $('#SearchApp').autocomplete({
+                source: '/KnowledgeBase/AutocompleteApplication',
+                //delay: 500,
+                //minLength: 2,
+
+                select: function (event, ui) {
+
+                              
+                    $('#AppErrorMessage').empty();
+                    $('#ApplicationId').val(ui.item.id);
+                    $('#SearchApp').css({ "background-color": "#F0F0F0" });
+                    $('#ArticleCategoryId').focus();
+
+
+                }
+            });
+
+
+            $("#AddApp").click(function (e) {
+
+
+
+
+                $('#AppErrorMessage').empty();
+
+                $("#dialog").dialog({
+
+                    autoOpen: false,
+                    width: 380,
+                    height: 300,
+                    resizable: false,
+                    modal: true,
+                    position: ['middle', 'middle'],
+                    closeOnEscape: true,
+                    //position: { my: 'centre', at: 'centre' },
+                    title: "Add Application",
+                    //  show: { effect: "blind", duration: 100 },
+                    // hide: { effect: "explode", duration: 200 },                    
+                    open: function (event, ui) {
+                        $(this).load("@Url.Action("AddApp")");
+                    }
+                });
+
+                $("#dialog").dialog("open");
+
+            });
+
+
+                  
+
+                $('#submitform').click(function()  {
+
+                    $('#AppErrorMessage').empty();
+
+                    var checkapps = $('#SearchApp').val().trim();
+
+                    if (checkapps == "")
+                    {
+                        $('#AppErrorMessage').append('Please Enter Application');
+                    }
+                    else {
+
+                        $("#thisForm").submit();
+
+                        //alert("test"+ $('#TestApp').val() );
+                        //alert("searchg2" + $('#SearchApp').val() );
+                
+                        //var v = $('#TestApp').val().trim();
+                        //var appinfield = $('#SearchApp').val().trim();
+
+                        //if (v != appinfield) {
+                        //    $('#AppErrorMessage').append('Invalid Application details');
+                        //}
+                        //else {
+                        //    $("#thisForm").submit();
+                                                      
+                    }               
+                });
+            
+            
+       });
+
+        
+</script>
+
+}
+
+
+  @*//(function (data) {//select: function (event, ui) {
+                //    if (ui.item) {
+                //        $(event.target).val(ui.item.value);                //    }
+                    //submit the form
+                    //$('#SearchApp').autocomplete("close");
+                    //submitsearch();*@

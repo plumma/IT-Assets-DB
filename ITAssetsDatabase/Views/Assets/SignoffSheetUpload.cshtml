@@ -1,0 +1,74 @@
+﻿@model ITAssetsDatabase.Models.Assets.SignoffSheetUploadViewModel
+
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+<style>
+    select {
+        height: 33px;
+        width: 300px;
+        background-color: #FFF7F7;
+        padding-left: 27px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    div {
+        margin-bottom: 15px;
+    }
+
+    input, .upload {
+        width: 300px;
+        height: 25px;
+    }
+
+
+    .ui-dialog .ui-dialog-titlebar {
+        color: white;
+        background-color: #6c254a;
+    }
+
+    .ui-corner-all {
+        border-radius: 5px;
+    }
+</style>
+
+
+@using (Html.BeginForm("SignOffSheetsUpload", "Assets", FormMethod.Post, new { enctype = "multipart/form-data", id = "thisForm" }))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>SignoffSheetUploadViewModel</legend>
+
+        @Html.HiddenFor(model => model.AssetId)
+        @Html.HiddenFor(model => model.EmployeeID)
+        @Html.HiddenFor(model => model.EmployeeFullName)
+
+
+        <div id="right">
+            <div>
+                Upload sheet for
+                @Html.DisplayFor(model => model.EmployeeFullName)
+            </div>
+        </div>
+        
+            
+        <div id="left">
+            <div>      
+                <input class="upload" type="file" name="fileupload_object" id="file1" />
+                @Html.HiddenFor(model => model.Name)
+            </div> 
+        </div>
+        <p>
+            <input id="upload" type="Submit"  value="Upload" />
+        </p>
+    </fieldset>
+}
+

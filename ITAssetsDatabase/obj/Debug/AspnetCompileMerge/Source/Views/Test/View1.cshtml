@@ -1,0 +1,47 @@
+﻿@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Order</legend>
+
+           <div class="editor-label">
+            Helpdesk Reference :-
+        </div>
+        
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HDRef)
+            @Html.ValidationMessageFor(model => model.HDRef)
+
+        </div>
+        <br />
+
+       <div class="editor-field">
+             Who requested this :-
+                <br />
+             @Html.DropDownList("RaisedById", String.Empty)             
+             @Html.ValidationMessageFor(model => model.RaisedById)
+       </div>
+               
+        <br />
+
+  @using (Ajax.BeginForm("AddItems", "Home",
+            new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "searchResults" }))
+            
+            {           
+                        @Html.DropDownList("ProductTypes","<- Type ->")                    
+                        @Html.DropDownList("ProductMakes", String.Empty)                    
+                        @Html.DropDownList("ProductId", String.Empty) 
+                        <input type="hidden" id="OrderItemBasketId" name="OrderItemBasketId" value="@ViewBag.OrderItemBasketId" />
+                        <input type="submit" value="Submit" /> }   
+        
+        <table id="searchResults">        </table> 
+             
+         
+     
+
+        <p>
+            <input type="submit" value="Next" />
+        </p>
+    </fieldset>
+}

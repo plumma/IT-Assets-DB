@@ -1,0 +1,14 @@
+﻿<button id="opener">Click</button>
+<div id="dialog" title="Dialog Title">I'm a dialog</div> 
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryui")  
+    @Styles.Render("~/Content/themes/base/css")
+
+    <script>
+        $("#dialog").dialog({ autoOpen: false });
+        $("#opener").click(function () { $("#dialog").dialog("open"); });
+</script>
+}
